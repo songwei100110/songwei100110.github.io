@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Rao FU, Rao Fu, Homepage, Webpage">
+	<meta name="description" content="Rao FU's homepage">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rao FU | Homepage</title>
+	<link href="style.css" rel="stylesheet" />
+	<style>
+	</style>
+	
+	<!-------------------------------------------------- Script -------------------------------------------------->
+	
+</head>	
+
+<body>
+<!-------------------------------------------------- Header -------------------------------------------------->
+<div id="header">
+	<h1> Rao FU </h1>
+	<h2>Computer Science/Machine Learning/Computer Vision/Computer Graphics</h2>
+<!-- 	<button onclick="window.location.href = './';" id="button4">HOME</button>	
+	<button onclick="window.location.href = './resource/rico_cv.pdf';" id="button5">RESUME</button>
+	<button onclick="window.location.href = './';" id="button6">RESEARCH</button>
+	<button onclick="window.location.href = 'mailto:keliictcas@gmail.com';" id="button7">CONTACT</button> -->
+</div><!-- Header -->
+
+<!-------------------------------------------------- Navbar -------------------------------------------------->
+<div id="nav-wrapper">
+<div id="nav">
+			<a href="./index.html" class="active">Home</a>
+			<a href="./experience.html">Experience</a>
+			<a href="./project.html">Project</a>
+			<a href="./resource/MY_CV.pdf">CV</a>
+			<a href="./contact.html">Contact</a>
+</div> <!-- #nav -->
+</div>
+<!-------------------------------------------------- Content -------------------------------------------------->
+<div id="content">
+
+	<div id="c_biography">
+		<strong id="c_font1">Hello,</strong><br>
+		<span class="c_font2">a bit about me:</span><br>
+		<p class="c_font3">
+			TODO
+		</p>
+	</div>
+
+	<div id="c_profile">
+		<div id="c_thumbnail">
+			lala
+		</div>
+	</div>
+
+	<div id="c_info">
+		<strong id="c_font4">Hello,</strong><br>
+		<span class="c_font2"> ...and more about me:</span><br>
+		<div class="thumbnail" onclick="window.location.href='./resource/MY_CV.pdf'; " id="button1" >
+				<p>RESUME</p>
+		</div> <!-- .thumbnail -->
+
+		<div class="thumbnail" onclick="window.location.href = './project.html';" id="button2">
+				<p>PROJECT</p>
+		</div> <!-- .thumbnail -->
+
+		<div class="thumbnail" onclick="window.location.href = 'mailto:rao_fu@brown.edu';" id="button3">
+				<p>CONTACT</p>
+		</div> <!-- .thumbnail -->
+
+		<div class="thumbnail">
+			<img src="img/ucas_button.png" id="button4" alt="ucas_button" >
+			<div class="overlay" onclick="window.location.href = 'http://english.ucas.ac.cn/index.php/admission/undergraduate/introduction';" >
+				<p>LALA</p>
+			</div>
+		</div> <!-- .thumbnail -->
+
+		<div class="thumbnail">
+			<img src="img/usc_button.jpg" id="button5" alt="usc_button">
+			<div class="overlay" onclick="window.location.href = 'https://www.usc.edu/';" >
+				<p>LALA</p>
+			</div>
+		</div> <!-- .thumbnail -->
+
+		<div class="thumbnail">
+			<img src="img/ucsd_button.jpg" id="button6" alt="ucsd_button">
+			<div class="overlay" onclick="window.location.href = 'https://ucsd.edu/';" >
+				<p>LALA</p>
+			</div>
+		</div> <!-- .thumbnail -->
+	<div class="clearfloat"></div>
+</div>
+
+</div><!-- Content -->
+<div class="clearfloat"></div>
+<!-------------------------------------------------- Footer -------------------------------------------------->
+<div id="footer">
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i3.png" alt="email">
+	</div>
+	<div class="b_font">
+		rao_fu@brown.edu
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i5.png" alt="tel">
+	</div>
+	<div class="b_font">
+		lalala
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i4.png" alt="git">
+	</div>
+	<div class="b_font">
+		github.com/freddierao
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i2.png" alt="copyright">
+	</div>	
+	<div class="b_font">
+		&copy; 2021 by Rao FU
+	</div>		
+	<div class="clearfloat"></div>
+</div><!-- Footer -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav-wrapper");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

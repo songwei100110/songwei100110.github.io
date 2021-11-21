@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Rao FU, Rao Fu, Homepage, Webpage">
+	<meta name="description" content="Rao FU's homepage">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rao FU | Contact</title>
+	<link href="style.css" rel="stylesheet" />
+	<style>
+		#c_thumbnail {
+			background-image: url('img/donate.jpg');
+			width: 200px; 
+			height: 200px;
+		}
+
+		.form-row {
+			margin: 10px 0px;
+			padding: 0px 40px;
+			clear:left;
+		}
+			
+		/* main-label class, set width and float left */
+		.main-label {
+				width: 200px;
+				float:left;
+		}
+		
+		/* add #msg-id, setting width 50% */
+		#msg-id {
+			width:50%;
+		}
+		
+		
+		/* style button, add padding for top/bottom and different for right/left */
+		button {
+				padding: 10px 20px;
+		}
+		
+		/* submit-btn id, add background color #900 and make text white */
+		#submit-btn {
+				background-color: #900;
+				color: #FFF;
+	}
+		#content{
+			margin-top: 0px;
+		}
+	</style>
+</head>	
+
+<body>
+<!-------------------------------------------------- Header -------------------------------------------------->
+<div id="header">
+	<h1> Rao FU</h1>
+	<h2>Computer Science/Machine Learning/Computer Vision/Computer Graphics</h2>
+<!-- 	<button onclick="window.location.href = './';" id="button4">HOME</button>	
+	<button onclick="window.location.href = './resource/rico_cv.pdf';" id="button5">RESUME</button>
+	<button onclick="window.location.href = './';" id="button6">RESEARCH</button>
+	<button onclick="window.location.href = 'mailto:keliictcas@gmail.com';" id="button7">CONTACT</button> -->
+</div><!-- Header -->
+
+<!-------------------------------------------------- Navbar -------------------------------------------------->
+<div id="nav-wrapper">
+<div id="nav">
+			<a href="./index.html">Home</a>
+			<a href="./experience.html" >Experience</a>
+			<a href="./project.html">Project</a>
+			<a href="./resource/MY_CV.pdf">CV</a>
+			<a href="./contact.html" class="active">Contact</a>
+</div> <!-- #nav -->
+</div>
+<!-------------------------------------------------- Content -------------------------------------------------->
+<div id="content">
+
+	<div id="c_biography">
+		<span class="c_font2">Contact me:</span><br>
+		<p class="c_font3">
+		Phone: lalala
+		</p>
+		<p class="c_font3">
+		Email: rao_fu@brown.edu
+		</p>
+		<p class="c_font3">
+		Brown University Box 1910, Providence, RI 02912
+		</p>
+	</div>
+
+	<div id="c_profile">
+		<span class="c_font2">Buy me a Boba:</span><br>
+		<p class="c_font3">
+		If you like my homepage and think it's useful, welcome to buy me a Boba!
+		</p>
+		<div id="c_thumbnail">
+		</div>
+	</div>
+
+	<div id="c_info">
+		<span class="c_font2">Leave a message:</span><br>
+		<p class="c_font3">
+		If you are interested in my work, please leave your information to me. I'm looking forward to working with you!
+		</p>
+	<p class="c_font3"> Message received! Thank you for your interest!</p>	
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div><!-- Content -->
+<div class="clearfloat"></div>
+<!-------------------------------------------------- Footer -------------------------------------------------->
+<div id="footer">
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i3.png" alt="email">
+	</div>
+	<div class="b_font">
+		rao_fu@brown.edu
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i5.png" alt="tel">
+	</div>
+	<div class="b_font">
+		lalala
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i4.png" alt="git">
+	</div>
+	<div class="b_font">
+		github.com/freddierao
+	</div>	
+	<div class="b_thumbnail">
+		<img class="b_img" src="img/i2.png" alt="copyright">
+	</div>	
+	<div class="b_font">
+		&copy; 2021 by Rao FU
+	</div>		
+	<div class="clearfloat"></div>
+</div><!-- Footer -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav-wrapper");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
