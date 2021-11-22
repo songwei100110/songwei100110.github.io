@@ -29,33 +29,42 @@
 <!-------------------------------------------------- Navbar -------------------------------------------------->
 <div id="nav-wrapper">
 <div id="nav">
-			<a href="./index.html" class="active">Home</a>
-			<a href="./experience.html">Experience</a>
-			<a href="./project.html">Project</a>
+			<a href="./index.html#content_home" class="active">Home</a>
+			<a href="./index.html#content_project">Research</a>
+			<a href="./index.html#content_exp">Experience</a>
 			<a href="./resource/MY_CV.pdf">CV</a>
-			<a href="./contact.html">Contact</a>
+			<a href="./index.html#c_contact_biography">Contact</a>
 </div> <!-- #nav -->
 </div>
-<!-------------------------------------------------- Content -------------------------------------------------->
-<div id="content">
-
+<!-------------------------------------------------- Content Home-------------------------------------------------->
+<div class="content" id="content_home">
+<div class="c_home_wrapper">
 	<div id="c_biography">
 		<strong id="c_font1">Hello,</strong><br>
 		<span class="c_font2">a bit about me:</span><br>
 		<p class="c_font3">
-			TODO
+			I'm a PhD student in <a href="https://cs.brown.edu/">Computer Science</a> at <a href="https://www.brown.edu/">Brown University</a>. 
+			I'm very happy to work with Prof. <a href="https://srinathsridhar.com">Srinath Sridhar</a> at <a href="https://visual.cs.brown.edu/">Brown Visual Computing Group</a>. 
+			My research interests include Computer Vision, Graphics, Machine Learning and Robotics. 
+		</p>
+		<p class="c_font3">
+			Previously, I received my Bachelor degree from the <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University of the Chinese Academy of Sciences</a>. 
+			
+			I also spend some wonderful time at <a href="https://www.usc.edu/">University of Southern California</a>, 
+			<a href="https://ucsd.edu/">University of California, San Diego</a>, 
+			and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research, Asia</a>.
 		</p>
 	</div>
 
 	<div id="c_profile">
 		<div id="c_thumbnail">
-			lala
 		</div>
 	</div>
 
 	<div id="c_info">
-		<strong id="c_font4">Hello,</strong><br>
-		<span class="c_font2"> ...and more about me:</span><br>
+		<strong id="c_font4">You Found</strong><br>
+		<strong id="c_font4">a Secret!</strong><br>
+		<span class="c_font2_1"> ...and more about me:</span><br>
 		<div class="thumbnail" onclick="window.location.href='./resource/MY_CV.pdf'; " id="button1" >
 				<p>RESUME</p>
 		</div> <!-- .thumbnail -->
@@ -90,8 +99,221 @@
 		</div> <!-- .thumbnail -->
 	<div class="clearfloat"></div>
 </div>
+</div><!-- Home Wrapper-->
+</div><!-- Content Home-->
 
-</div><!-- Content -->
+<!-------------------------------------------------- Content Project -------------------------------------------------->
+<div class="content" >
+	<div class="c_public_wrapper" id="content_project">
+		<div class="c_font1_1">Publication</div>
+		<div class="c_public">
+				<div class="disp_wrapper">
+					<a href="./img/project1.jpg" data-lightbox="project1" data-title="RimdVAE Structure">
+						<img src="./img/project1.jpg" class="project_img" title="RimdVAE Structure">
+					</a>
+					<p class="small_font">click image for details</p>
+				</div>
+				<strong>RimdVAE: Rotation-invariant 3D Shape Retrieval Network.</strong>
+				<br><em><strong>Rao Fu</strong>, Jie Yang, JiaWei Sun, Lin Gao. </em>
+				<br>Submit to <em>IEEE Transactions on Visualization & Computer Graphics </em>
+				<strong>(TVCG)</strong>
+				<br><em class="small_font">We introduce a network called RimdVAE, which is able to retrieve intra-class 3D shapes and extracts shape descriptor robust to rigid deformations. Through qualitative and quantitative experiments, we prove that rimdVAE is able to extract geometric details better and outperforms other state-of-the-art methods on intra-class global shape retrieval tasks.</em>
+				<br><a href="./void.html" class="small_font">[paper]</a>
+				<a href="./void.html" class="small_font">[dataset]</a>
+				<div class="clearfloat"></div>
+		</div>
+	</div>
+	
+	<div class="c_project_wrapper">
+		<div class="c_font1_1">Course Project</div>
+		
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<a href="./img/course1.png" data-lightbox="course1" data-title="CCF Big Data Computing Intelligence Contest">
+					<img src="./img/course1.png" class="project_img" title="RCCF Big Data Computing Intelligence Contes">
+				</a>
+				<p class="small_font">click image for details</p>
+			</div>
+			<strong>OCR-based ID Card Entities Extraction, CCF Big Data Computing Intelligence Contest</strong>
+				<em class="dates">Oct. 2019</em>
+				<br><br>Objection: Extract entities from blurred and randomly rotated ID Card images
+				<br>Ranking: 47/193
+				<br><em class="small_font">In this project, we use Mathematica to preprocess the blurred image. We use OCR-based methods to extract entities from images. At last, we use rules to extract valid information by post-processing.</em>
+				<br><a href="https://www.datafountain.cn/competitions/346" class="small_font">[contest result]</a>
+			<div class="clearfloat"></div>
+		</div>
+		
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<a href="./img/project2.jpg" data-lightbox="project2" data-title="A frame in the moview">
+					<img src="./img/project2.jpg" class="project_img2" title="A frame in the moview">
+				</a>
+				<p class="small_font">click image for details</p>
+			</div>
+			<strong>Maya Workshop: LandRover Defender 90</strong>
+				<em class="dates">Apr. 2020</em>
+				<br><br>Objection: Create a scence through 3D modelling, animation and visual effects
+				<br><em class="small_font">In this project, we use basic geometric shapes to modelling a indoor scence. We fine-tune to UV layout for texture mapping. Then, we use expressions to confine object motion. With different cameras and lightings, we made a shot movie of car driving scence.</em>
+			<div class="clearfloat"></div>
+		</div>
+		
+
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<a href="./img/project3.png" data-lightbox="project3" data-title="Ray Tracing with OpenGL">
+					<img src="./img/project3.png" class="project_img2" title="Ray Tracing with OpenGL">
+				</a>
+				<p class="small_font">click image for details</p>
+			</div>
+			<strong>OpenGL Workshop</strong>
+				<em class="dates">Autumn 2019</em>
+				<br><br>Objection: Learn the basic algorithms of computer graphics and implement them with OpenGL
+				<br><em class="small_font">In this project, we implement Bezier Curve and Bezier surface with C and C++. Also, we use Phong Lighting Model and Ray-Tracing Algorithm with Python. Left is an example of ray-tracing rendering result of some basic geometry.</em>
+			<div class="clearfloat"></div>
+		</div>
+
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<img src="./img/project4.jpg" class="project_img2" alt="idea">
+			</div>
+			<strong>Triplet Matching</strong>
+				<em class="dates">Autumn 2019</em>
+				<br><br>Objection: Given a sentence and entities in that sentence, extract all correct triplets
+				<br><em class="small_font">In this project, we use Transformer model to boost model’s ability. We implemented the word embedding encoder and transformer model with Tensorflow.</em>
+			<div class="clearfloat"></div>
+		</div>
+
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<img src="./img/project4.jpg" class="project_img2" alt="idea">
+			</div>
+			<strong>Go-Bang Game in C language</strong>
+				<em class="dates">Autumn 2018</em>
+				<br><br>Objection: Design an Go-Bang game with interactive interface and chess-playing strategy
+				<br><em class="small_font">In this project, we designed game interface and implemented Human-vs-Human mode and Human-vs-Machine mode with C. We further optimized the chess playing strategy with α-β pruning algorithm.</em>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+</div><!-- Content Project -->
+
+<!-------------------------------------------------- Content Experiment-------------------------------------------------->
+<div class="content">
+
+	<div class="c_education_wrapper" id="content_exp">
+		<div class="c_font1_1">Education</div>
+		<div class="c_education">
+			<strong>UNIVERSITY OF CHINESE ACADEMY OF SCIENCES</strong>
+			<em class="dates">Sept. 2017-Aug. 2021</em>
+			<div class="clearfloat"></div>
+			<div class="logo_wrapper">
+				<img class="schoollogo" src="./img/cas_logo.png" alt="CAS Logo" />
+			</div>
+			<ul>
+			<li>Degree: Bachelor of Computer Science and Technology</li>
+			<li>GPA: 3.72/4.00</li>
+			<li>English: TOFEL 108, GRE 330(160/V+170/Q+3.0/AW)</li>
+			<li>Selected Courses:  Discrete Mathematics, Probability and Mathematical Statistics, Data Structure, Introduction to
+	Theory of Computation, Artificial Intelligence, Machine Learning, Computer Graphics</li>
+			<li>Scholarship: National Inspirational Scholarship(5%)</li>
+			</ul>
+		</div>
+
+		<div class="c_education">
+			<strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong>
+			<em class="dates">Jan. 2020-May. 2020</em>
+			<div class="clearfloat"></div>
+			<div class="logo_wrapper">
+				<img class="schoollogo" src="./img/usc_logo.png" alt="USC Logo" />
+			</div>
+			<!-- <div class="clearfloat"></div> -->
+			<ul>
+			<li>Visiting Student</li>
+			<li>GPA: -.--</li>
+			<li>Selected Courses:  Introduction to Algorithm and Theory of Computing, Web Publishing, 3D Modeling Animation and Visual Effect</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="c_intern_wrapper">
+		<div class="c_font1_1">Internship</div>
+		<div class="c_intern">
+			<strong>Research intern: Research on 3D Reconstruction</strong>
+				<em class="dates">May 2020-Sept 2020</em>
+			<br><br><em>Advisor: Prof. Hao Su</em><em class="dates">University of California, San Diego</em>
+			<ul>
+				<li>Established a model for rotation-invariant intra-class 3D shape retrieval tasks</li>
+			</ul>
+		</div>
+
+		<div class="c_intern">
+			<strong>Research intern: Research on 3D Shape Retrieval</strong>
+				<em class="dates">August 2018-May 2019</em>
+			<br><br><em>Advisor: Prof. Lin Gao</em><em class="dates">Institute of Computing Technology, CAS</em>
+			<ul>
+				<li>Established a model for rotation-invariant intra-class 3D shape retrieval tasks</li>
+				<li>Construct a dataset for intra-class 3D shape retrieval, which is ready to release</li>
+				<li>Implement the neural network with Python, Tensorflow and Matlab</li>
+				<li>Complete a paper to be submitted to international journal as first author</li>
+			</ul>
+		</div>
+
+		<div class="c_intern">
+				<strong>Research intern: Research on Single Image Reconstruction</strong>
+					<em class="dates">Jul.2019-Sept.2019</em>
+				<br><br><em>Advisor: Prof. Lin Gao</em> <em class="dates">Institute of Computing Technology, CAS</em>
+				<ul>
+					<li>Objection: Reconstruct an outdoor scene from a single image</li>
+					<li>Basic theory study(include image segmentation, terrain modelling, tree modelling and outdoor scene reconstruction)</li>
+					<li>Brought up idea to reconstruct tree model from a set of parameterized 3D vector fields</li>
+				</ul>
+		</div>
+
+		<div class="c_intern">
+			<strong>Research intern: Research on Precise Identification of Chromatin Interaction Sites</strong>
+				<em class="dates">Jul.2018-Sept.2018</em>
+			<br><br><em>Advisor: Prof. Zhihua Zhang</em> <em class="dates">Beijing Institute of Genomics, CAS</em>
+			<ul>
+				<li>Objection: Present an algorithm for precise identification of chromatin interaction sites at kilobase resolution</li>
+				<li>Look through literature reviews about genome-wide mapping and analysis of chromosome architecture</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div><!-- Content Experiment-->
+
+<!-------------------------------------------------- Content Contact-------------------------------------------------->
+<div class="content">
+	<div class="c_contact_wrapper">
+		<div id="c_contact_biography">
+			<span class="c_font2">Contact me:</span><br>
+			<p class="c_font3">
+			Phone: lalala
+			</p>
+			<p class="c_font3">
+			Email: rao_fu@brown.edu
+			</p>
+			<p class="c_font3">
+			Mail: Brown University Box 1910, Providence, RI 02912
+			</p>
+		</div>
+
+		<div id="c_contact_profile">
+			<span class="c_font2">Buy me a Boba:</span><br>
+			<p class="c_font3">
+			If you like my homepage and think it's useful, welcome to buy me a Boba!
+			</p>
+			<div id="c_contact_thumbnail">
+			</div>
+		</div>
+
+		<div class="clearfloat"></div>
+	</div><!-- Content Contact Wrapper-->
+</div><!-- Content Contact -->
+
+
 <div class="clearfloat"></div>
 <!-------------------------------------------------- Footer -------------------------------------------------->
 <div id="footer">
@@ -100,13 +322,7 @@
 	</div>
 	<div class="b_font">
 		rao_fu@brown.edu
-	</div>	
-	<div class="b_thumbnail">
-		<img class="b_img" src="img/i5.png" alt="tel">
-	</div>
-	<div class="b_font">
-		lalala
-	</div>	
+	</div>		
 	<div class="b_thumbnail">
 		<img class="b_img" src="img/i4.png" alt="git">
 	</div>
