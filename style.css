@@ -1,5 +1,6 @@
 	body{
 		margin: 0px;
+		/* background-color: #e7e3e2; */
 		background-color: #e7e3e2;
 		/*padding-top:160px;*/
 	}
@@ -77,20 +78,33 @@
 		line-height:50px;
 		padding:0px 120px;
 	}
+
+	#footer a:link {
+		color: #ffffff;
+		background-color: transparent;
+		/* text-decoration: none; */
+	}
+
+	#footer a:visited {
+		color: #ffffff;
+		background-color: transparent;
+		/* text-decoration: none; */
+	}
 	.clearfloat {
 		clear: both;
 	}
-	#c_biography, #c_contact_biography{
+	
+	#c_biography{
 		margin-top: 0px;
 		margin-bottom: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 400px;
-		height: 320px;
+		height: 400px;
 		float: left;
-		/*background-color: red;*/
+		/* background-color: red; */
 	}
-
+	
 	#c_biography a:link {
 		color: #990000;
 		background-color: transparent;
@@ -103,23 +117,59 @@
 		/* text-decoration: none; */
 	}
 
-	#c_profile, #c_contact_profile{
-		margin-top: 30px;
-		margin-bottom: 40px;
-		width: 300px;
+	#c_contact_biography{
+		margin-top: auto;
+		margin-bottom: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-top: 50px;
+		width: 400px;
 		height: 320px;
 		float: left;
-		/*background-color: green;*/
+		/* background-color: red; */
 	}
+
+
+	#c_contact_biography a:link {
+		color: #990000;
+		background-color: transparent;
+		/* text-decoration: none; */
+	}
+
+	#c_contact_biography a:visited {
+		color: #990000;
+		background-color: transparent;
+		/* text-decoration: none; */
+	}
+
+	#c_profile{
+		margin-top: 0px;
+		margin-bottom: 40px;
+		width: 300px;
+		height: 400px;
+		float: left;
+		/* background-color: green; */
+	}
+
+	#c_contact_profile{
+		margin-top: auto;
+		margin-bottom: 40px;
+		padding-top: 50px;
+		width: 500px;
+		height: 320px;
+		float: left;
+		/* background-color: green; */
+	}
+
 	#c_info{
 		margin-top: 0px;
 		margin-bottom: 40px;
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 250px;
-		height: 320px;
+		height: 400px;
 		float: right;
-		/*background-color: blue;*/
+		/* background-color: blue; */
 	}
 
 	#c_thumbnail {
@@ -134,14 +184,26 @@
 		overflow: hidden;
 	}
 
-	#c_contact_thumbnail {
+	#c_contact_thumbnail_1 {
 		background-image: url('img/donate.jpg');
 		width: 200px; 
 		height: 200px;
 		background-position: right;
 		background-size: cover;
 		float: left;
-		border: 0px solid #000;
+		border: 2px solid #000;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	#c_contact_thumbnail_2 {
+		background-image: url('img/donate_paypal.jpg');
+		width: 200px; 
+		height: 200px;
+		background-position: right;
+		background-size: cover;
+		float: left;
+		border: 2px solid #000;
 		border-radius: 50%;
 		overflow: hidden;
 	}
@@ -151,7 +213,7 @@
 	}
 
 	.c_home_wrapper, .c_contact_wrapper{
-		margin-top: auto;
+		margin-top: 20px;
 		margin-bottom: auto;
 		margin-right: auto;
 		margin-left: auto;
@@ -159,30 +221,36 @@
 		float: left;
 	}
 	.c_education_wrapper, .c_intern_wrapper{
-		margin-top: 50px;
+		margin-top: auto;
 		margin-right: auto;
 		margin-left: auto;
+		padding-top: 50px;
 		padding-bottom: 50px;
 		width: 1000px;
 		float: left;
 	}
 
 	.c_education, .c_intern{
-		margin-top: 50px;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 870px;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 800px;
-		/*height:150px;*/
-		/*background-color:white;*/
+		background-color:#f3f0ef;
 		font-size: 15px;
 		font-family:Georgia, serif;
 		/*background-color: green;*/
 	}
 
 	.c_public_wrapper, .c_project_wrapper{
-		margin-top: 50px;
+		margin-top: auto;
 		margin-right: auto;
 		margin-left: auto;
+		padding-top: 50px;
 		padding-bottom: 50px;
 		width: 1000px;
 		float: left;
@@ -192,9 +260,11 @@
 		padding-top: 30px;
 		padding-right: 30px;
 		width: 870px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		margin-right: auto;
 		margin-left: auto;
-		background-color:white;
+		background-color:#f3f0ef;
 		line-height: 1.5;
 		font-size: 15px;
 		font-family:Georgia, serif;
@@ -292,16 +362,17 @@
 		float:right;
 	}
 	.schoollogo{
-		width:100px;
-		height: auto;
+		width:auto;
+		height: 100px;
 	}	
 
 	.disp_wrapper{
 		/*margin-top: 20px;*/
 		width: 300px;
+		height: 240px;
 		float:left;
 		text-align: center;
-		margin: 0px 15px;
+		margin: 15px 15px;
 	}
 
 	.project_img{
