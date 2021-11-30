@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords" content="Rao FU, Rao Fu, Homepage, Webpage">
+	<meta name="keywords" content="Rao FU, Rao FU, Rao Fu Homepage, Rao Fu Webpage, Rao Fu UCAS, Rao Fu Brown">
 	<meta name="description" content="Rao FU's homepage">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rao FU | Homepage</title>
@@ -11,8 +11,8 @@
 	<style>
 	</style>
 	
-	<!-------------------------------------------------- Script -------------------------------------------------->
 	
+
 </head>	
 
 <body>
@@ -25,17 +25,40 @@
 <!-------------------------------------------------- Navbar -------------------------------------------------->
 <div id="nav-wrapper">
 <div id="nav">
-			<a href="./index.html#content_home" class="active">Home</a> 
-			<!-- ACTIVE TODO -->
-			<a href="./index.html#content_project">Research</a>
-			<a href="./index.html#content_exp">Experience</a>
-			<a href="./resource/MY_CV.pdf">CV</a>
-			<a href="./index.html#c_contact_biography">Contact</a>
+			<button class="btn active" onclick="window.location.href = './index.html#content_home';">Home</button>
+			<button class="btn" onclick="window.location.href = './index.html#content_project';">Research</button>
+			<button class="btn" onclick="window.location.href = './index.html#content_exp';">Experience</button>
+			<button class="btn" onclick="window.location.href = './resource/MY_CV.pdf';">CV</button>
+			<button class="btn" onclick="window.location.href = './index.html#c_contact_biography';">Contact</button>
+			<!-- <a href="./index.html#content_home" class="active">Home</a>  -->
+			<!-- <a href="./index.html#content_project">Research</a> -->
+			<!-- <a href="./index.html#content_exp">Experience</a> -->
+			<!-- <a href="./resource/MY_CV.pdf">CV</a> -->
+			<!-- <a href="./index.html#c_contact_biography">Contact</a> -->
 </div> <!-- #nav -->
 </div>
 
+<!-------------------------------------------------- Script -------------------------------------------------->
+<script>
+	// Get the container element
+	var btnContainer = document.getElementById("nav");
+
+	// Get all buttons with class="btn" inside the container
+	var btns = btnContainer.getElementsByClassName("btn");
+
+	// Loop through the buttons and add the active class to the current/clicked button
+	for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+	}
+</script>
+
 <!-------------------------------------------------- Content Home-------------------------------------------------->
-<div class="content" id="content_home">
+<div class="content"  id="content_home">
+
 	<div class="c_home_wrapper">
 		<div id="c_biography">
 			<strong id="c_font1">Hello,</strong><br>
@@ -44,11 +67,10 @@
 				I'm a PhD student in <a href="https://cs.brown.edu/">Computer Science</a> at <a href="https://www.brown.edu/">Brown University</a>. 
 				I'm very happy to work with Prof. <a href="https://srinathsridhar.com">Srinath Sridhar</a> at <a href="https://visual.cs.brown.edu/">Brown Visual Computing Group</a>. 
 				My research interests are in Computer Vision, Graphics, Machine Learning, and Robotics. 
-				Besides that, I enjoy reading about Cognitive Science.
+				Besides that, I enjoy reading about Cognitive Science. 
 			</p>
 			<p class="c_font3">
 				Previously, I received my Bachelor degree from the <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University of the Chinese Academy of Sciences</a>. 
-				
 				I also had a wonderful time at the <a href="https://www.usc.edu/">University of Southern California</a>, 
 				the <a href="https://ucsd.edu/">University of California San Diego</a>, 
 				and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>.
@@ -65,45 +87,58 @@
 			<strong id="c_font4">a Secret!</strong><br>
 			<span class="c_font2_1"> ...and more about me:</span><br>
 			<!-- CONTENT TODO -->
-			<div class="thumbnail" onclick="window.location.href='./resource/MY_CV.pdf'; " id="button1" >
-					<p>CV</p>
+			<div class="thumbnail">
+				<img src="img/cv_icon.jpg" id="button1" alt="cv_button" >
+				<div class="overlay"  onclick="window.location.href='resource/MY_CV.pdf'; " >
+					<p>CV/<br>Resume</p>
+				</div>
 			</div> <!-- .thumbnail -->
 
-			<div class="thumbnail" onclick="window.location.href = './project.html';" id="button2">
-					<p>RESEARCH</p>
+			<div class="thumbnail">
+				<img src="img/gs_icon.png" id="button2" alt="google_button" >
+				<div class="overlay" onclick="window.location.href = 'https://scholar.google.com/citations?hl=en&user=VWMWQEcAAAAJ';" >
+					<p>Google<br>Scholar</p>
+				</div>
 			</div> <!-- .thumbnail -->
 
-			<div class="thumbnail" onclick="window.location.href = 'mailto:rao_fu@brown.edu';" id="button3">
-					<p>CONTACT</p>
+			<div class="thumbnail">
+				<img src="img/linkedin_icon.png" id="button3" alt="lkin_icon" >
+				<div class="overlay" onclick="window.location.href = 'https://www.linkedin.com/in/rao-fu-245269210/';" >
+					<p>LinkedIn<br>Profile</p>
+				</div>
 			</div> <!-- .thumbnail -->
 
 			<div class="thumbnail">
 				<img src="img/ucas_button.png" id="button4" alt="ucas_button" >
-				<div class="overlay" onclick="window.location.href = 'http://english.ucas.ac.cn/index.php/admission/undergraduate/introduction';" >
-					<p>LALA</p>
+				<div class="overlay" onclick="window.location.href = 'https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/';" >
+					<p>B.E.@<br>UCAS</p>
 				</div>
 			</div> <!-- .thumbnail -->
 
 			<div class="thumbnail">
-				<img src="img/usc_button.jpg" id="button5" alt="usc_button">
+				<img src="img/Brown_icon.jpg" id="button5" alt="brown_button">
 				<div class="overlay" onclick="window.location.href = 'https://www.usc.edu/';" >
-					<p>LALA</p>
+					<p>Ph.D.@<br>Brown
+					</p>
 				</div>
 			</div> <!-- .thumbnail -->
 
 			<div class="thumbnail">
-				<img src="img/ucsd_button.jpg" id="button6" alt="ucsd_button">
-				<div class="overlay" onclick="window.location.href = 'https://ucsd.edu/';" >
-					<p>LALA</p>
+				<img src="img/art_icon.jpg" id="button6" alt="art_button">
+				<div class="overlay" onclick="window.location.href = './index.html#content_home';" >
+					<p>Arts<br>Todo...</p>
 				</div>
 			</div> <!-- .thumbnail -->
-		<div class="clearfloat"></div>
-	</div>
+			
+		</div>
 	</div><!-- Home Wrapper-->
+
+	<div class="clearfloat"></div>
 </div><!-- Content Home-->
 
 <!-------------------------------------------------- Content Project -------------------------------------------------->
 <div class="content">
+
 	<div class="c_public_wrapper" id="content_project">
 		<div class="c_font1_1">Research Paper</div>
 		<div class="c_public">
@@ -118,8 +153,7 @@
 			<br><strong>NeurIPS 2021</strong></em>
 			<br><em class="small_font">We present a High-Resolution Transformer (HRFormer) that learns high-resolution representations for dense prediction tasks, in contrast to the original Vision Transformer that produces low-resolution representations and has high memory and computational cost. We demonstrate the effectiveness of the High-Resolution Transformer on both human pose estimation and semantic segmentation tasks, e.g., HRFormer outperforms Swin transformer by 1.3 AP on COCO pose estimation with 50% fewer parameters and 30% fewer FLOPs.</em>
 			<br><a href="https://arxiv.org/abs/2110.09408" class="small_font">[paper]</a>
-			<a href="https://github.com/HRNet/HRFormer" class="small_font">[github]</a>
-			<div class="clearfloat"></div>
+			<a href="https://github.com/HRNet/HRFormer" class="small_font">[github]</a>	
 		</div>
 
 		<div class="c_public">
@@ -136,9 +170,11 @@
 				<br><a href="https://arxiv.org/abs/2010.00973" class="small_font">[paper]</a>
 				<a href="https://github.com/IGLICT/RisaNET" class="small_font">[github]</a>
 				<a href="https://drive.google.com/drive/folders/1BpwtlhrYfR5xGcXGoYFjo9bQFtw4nFvP" class="small_font">[dataset]</a>
-				<div class="clearfloat"></div>
+				
 		</div>
 	</div>
+	<div class="clearfloat"></div>
+</div><!-- Content Project-->
 
 <!-------------------------------------------------- Content Experiment-------------------------------------------------->
 <div class="content">
@@ -243,7 +279,7 @@
 		<div id="c_contact_profile">
 			<span class="c_font1_1">Buy me a Boba:</span><br>
 			<p class="c_font3">
-			If you like my homepage and think it's useful, welcome to buy me a Boba!
+			If you like my homepage and think it's useful, welcome to buy me a Boba! Tips via Wechat or Paypal down here:
 			</p>
 			<div id="c_contact_thumbnail_1">
 			</div>
