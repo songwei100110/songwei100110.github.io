@@ -1,6 +1,6 @@
 	body{
 		margin: 0px;
-		background-color: #e7e3e2;
+		background-color: #ffffff;
 		/*padding-top:160px;*/
 	}
 	h1{
@@ -71,7 +71,7 @@
 	#footer {
 		/*height:50px;			*/
 		background-color: black;
-		color: white;
+		color: #ffffff;
 		text-align: left;
 		font-size:1em;
 		line-height:50px;
@@ -96,10 +96,12 @@
 	#c_biography{
 		margin-top: 0px;
 		margin-bottom: 0px;
-		margin-left: 10px;
-		margin-right: 10px;
-		width: 400px;
-		height: 400px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 580px;
+		height: 300px;
 		float: left;
 		/* background-color: red; */
 	}
@@ -143,9 +145,11 @@
 
 	#c_profile{
 		margin-top: 0px;
-		margin-bottom: 40px;
-		width: 300px;
-		height: 400px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 400px;
+		height: 300px;
 		float: left;
 		/* background-color: green; */
 	}
@@ -153,8 +157,10 @@
 	#c_contact_profile{
 		margin-top: auto;
 		margin-bottom: 40px;
-		padding-top: 50px;
-		width: 500px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 980px;
 		height: 320px;
 		float: left;
 		/* background-color: green; */
@@ -162,16 +168,18 @@
 
 	#c_info{
 		margin-top: 0px;
-		margin-bottom: 40px;
-		margin-left: 10px;
-		margin-right: 10px;
-		width: 250px;
-		height: 400px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 960px;
+		height: 100px;
 		float: right;
 		/* background-color: blue; */
 	}
 
-	#c_thumbnail {
+	/* #c_thumbnail {
 		background-image: url('img/profile.jpg');
 		width: 300px;
 		height: 300px;
@@ -181,7 +189,7 @@
 		border: 0px solid #000;
 		border-radius: 50%;
 		overflow: hidden;
-	}
+	} */
 
 	#c_contact_thumbnail_1 {
 		background-image: url('img/donate.jpg');
@@ -191,7 +199,7 @@
 		background-position: right;
 		background-size: cover;
 		float: left;
-		border: 2px solid #000;
+		border: 2px solid #ffffff;
 		border-radius: 50%;
 		overflow: hidden;
 	}
@@ -204,8 +212,8 @@
 		background-position: right;
 		background-size: cover;
 		float: left;
-		border: 2px solid #000;
-		border-radius: 50%;
+		border: 2px solid #ffffff;
+		border-radius: 0%;
 		overflow: hidden;
 	}
 
@@ -232,16 +240,16 @@
 	}
 
 	.c_education, .c_intern{
-		padding-top: 30px;
-		padding-left: 30px;
-		padding-right: 30px;
-		width: 870px;
-		height: 180px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 980px;
+		height: 160px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		margin-right: auto;
 		margin-left: auto;
-		background-color:#f3f0ef;
+		background-color:#ffffff;
 		font-size: 15px;
 		font-family:Georgia, serif;
 		/*background-color: green;*/
@@ -258,16 +266,17 @@
 	}
 
 	.c_public, .c_project{
-		padding-top: 30px;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
 		margin-top: 10px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 870px;
-		height: 240px;
-		background-color:#f3f0ef;
+		width: 980px;
+		height: 180px;
+		background-color:#ffffff;
 		line-height: 1.5;
 		font-size: 15px;
 		font-family:Georgia, serif;
@@ -293,8 +302,17 @@
 		font-family:Georgia, serif;
 	}
 	#c_font4{
-		color: #e7e3e2;
+		color: #0000;
 		font-size: 40px;
+	}
+	
+	#buttons{
+		height: auto;
+		width: 100%;
+	}
+	#button0{
+		height: auto;
+		width: 100%;
 	}
 	#button1{
 		height: auto;
@@ -324,7 +342,7 @@
 	}
 
 	#nav-wrapper {
-		background-color: #e7e3e2;
+		background-color: #ffffff;
 
 /*			top: 0px;
 		left: 0px;
@@ -401,11 +419,11 @@
 
 	.disp_wrapper{
 		/*margin-top: 20px;*/
-		width: 300px;
-		height: 240px;
+		width: 360;
+		height: 300;
 		float:left;
 		text-align: center;
-		margin: 15px 15px;
+		margin: 0px 20px 0px 0px;
 	}
 
 	.project_img{
@@ -448,9 +466,8 @@
 		background-color: black;
 	}
 
-
 	.thumbnail {
-		background-color: #CCC;
+		background-color: #ffffff;
 		width: 60px;
 		height: 60px;
 		float: left;
@@ -486,6 +503,29 @@
 	}
 		/* Add the overlay hover effect */
 	.thumbnail:hover .overlay {
+		visibility:visible;
+	}
+	.c_thumbnail {
+		background-color: #ffffff;
+		width: 300px;
+		height: 300px;
+		float: left;
+		margin:0px;
+/*		border: 1px solid #000;*/
+		overflow: hidden;
+		border-radius: 50%;
+		/* add relative position */
+		position:relative;
+		text-align: center;
+		color: white;
+		font-size: 0.6em;
+		cursor: pointer;
+	}
+	.c_thumbnail p {
+		margin-top:0px;
+
+	}
+	.c_thumbnail:hover .overlay  {
 		visibility:visible;
 	}
 	.sticky {

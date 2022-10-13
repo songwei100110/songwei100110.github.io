@@ -65,12 +65,12 @@
 			<span class="c_font2">a bit about me:</span><br>
 			<p class="c_font3">
 				I'm a PhD student in <a href="https://cs.brown.edu/">Computer Science</a> at <a href="https://www.brown.edu/">Brown University</a>. 
-				I'm very happy to work with Prof. <a href="https://srinathsridhar.com">Srinath Sridhar</a> at <a href="https://visual.cs.brown.edu/">Brown Visual Computing Group</a>. 
-				My research interests are in Computer Vision, Graphics, Machine Learning, and Robotics. 
-				Besides that, I enjoy reading about Cognitive Science. 
+				My research interests are in Computer Vision, Graphics, Deep Learning, and Robotics. 
+				I'm very happy to work with Prof. <a href="https://srinathsridhar.com">Srinath Sridhar</a> at <a href="https://visual.cs.brown.edu/">Brown VC Group</a> & <a href="https://ivl.cs.brown.edu/">Brown IVL</a>. 
+				I'm currently working at <a href="https://www.autodesk.com/research/overview">Autodesk Research</a> as a research intern. 
 			</p>
 			<p class="c_font3">
-				Previously, I received my Bachelor degree from the <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University of the Chinese Academy of Sciences</a>. 
+				Previously, I received my Bachelor of Engineer degree from the <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University of the Chinese Academy of Sciences</a>. 
 				I also had a wonderful time at the <a href="https://www.usc.edu/">University of Southern California</a>, 
 				the <a href="https://ucsd.edu/">University of California San Diego</a>, 
 				and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>.
@@ -78,15 +78,51 @@
 		</div>
 
 		<div id="c_profile">
-			<div id="c_thumbnail">
+			<div class="c_thumbnail">
+				<img src="img/profile.jpg" id="buttons" alt="profile_button" >
+				<div class="overlay">
+					<p>
+						勿戳！<br>
+						Don't poke my cheeks!<br>
+						¡no me toques las mejillas! <br>
+						मेरे गाल मत दबाओ! <br>
+						আমার গালে খোঁচা দিও না! <br>
+						não cutuque minhas bochechas! <br>
+						не тыкай меня в щеки! <br>
+						私の頬をつつかないで！ <br>
+						ਮੇਰੀਆਂ ਗੱਲ੍ਹਾਂ ਨੂੰ ਨਾ ਮਾਰੋ! <br>
+						唔好戳我嘅脸颊！<br>
+						đừng chọc má tôi!<br>
+						నా బుగ్గలు కుట్టకు!<br>
+						yanaklarımı dürtme!<br>
+						내 뺨을 찌르지 마! <br>
+						ne touchez pas mes joues!<br>
+						stoß mir nicht in die Wangen!<br>
+						என் கன்னங்களை குத்தாதே!<br>
+						میرے گالوں کو مت مارو!<br>
+						ojo nyocot pipiku!<br>
+						non toccarmi le guance!<br>
+						لا تكز خدي!<br>
+						
+					
+					</p>
+				</div>
 			</div>
 		</div>
 
 		<div id="c_info">
-			<strong id="c_font4">You Found</strong><br>
-			<strong id="c_font4">a Secret!</strong><br>
-			<span class="c_font2_1"> ...and more about me:</span><br>
+			<!-- <strong id="c_font4">And more</strong><br>
+			<strong id="c_font4">about me</strong><br> -->
+			<span class="c_font2_1"> and more about me... </span><br>
 			<!-- CONTENT TODO -->
+			<div class="thumbnail">
+				<img src="img/email_icon.jpg" id="button0" alt="email_button" >
+				<div class="overlay" onclick="window.location.href = 'mailto:rao_fu@brown.edu';" >
+					<p>Email to<br>Say Hi</p>
+				</div>
+			</div> <!-- .thumbnail -->
+
+
 			<div class="thumbnail">
 				<img src="img/cv_icon.jpg" id="button1" alt="cv_button" >
 				<div class="overlay"  onclick="window.location.href='./resource/My_CV.pdf'; " >
@@ -124,6 +160,14 @@
 			</div> <!-- .thumbnail -->
 
 			<div class="thumbnail">
+				<img src="img/cat_icon.jpg" id="button6" alt="cat_button">
+				<div class="overlay" onclick="window.location.href = 'https://instagram.com/inocchi_mew?r=nametag';" >
+					<p>My Cat<br>Inocchi
+					</p>
+				</div>
+			</div> <!-- .thumbnail -->
+
+			<div class="thumbnail">
 				<img src="img/art_icon.jpg" id="button6" alt="art_button">
 				<div class="overlay" onclick="window.location.href = './index.html#content_home';" >
 					<p>Arts<br>Todo...</p>
@@ -143,32 +187,69 @@
 		<div class="c_font1_1">Research Paper</div>
 		<div class="c_public">
 			<div class="disp_wrapper">
-				<a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure">
-					<img src="./img/HRFormer.png" class="project_img" title="HRFormer2 Structure">
-				</a>
-				<p class="small_font">click image for details</p>
+				<!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
+					<img src="./img/project_shapecrafter.jpg" class="project_img" title="ShapeCrafter Structure">
+				<!-- </a> -->
+				<!-- <p class="small_font">click image for details</p> -->
+			</div>
+			<strong>ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model.</strong>
+			<br><em><strong>R. Fu</strong>, X. Zhan, Y.W. Chen, D. Ritchie, S. Sridhar. </em>
+			<br><strong>NeurIPS 2022</strong></em>
+			<br><em class="small_font">We present ShapeCrafter, a neural network for recursive text-conditioned 3D shape generation. 
+				Our method supports shape editing, extrapolation, and can enable new applications in human-machine collaboration for creative design.</em>
+			<br><a href="https://arxiv.org/abs/2207.09446" class="small_font">[paper]</a>
+			<a href="https://ivl.brown.edu/projects/shapecrafter" class="small_font">[project]</a>	
+		</div>
+
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<!-- <a href="./img/project_hrformer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
+					<img src="./img/project_hrformer.png" class="project_img" title="HRFormer2 Structure">
+				<!-- </a> -->
+				<!-- <p class="small_font">click image for details</p> -->
 			</div>
 			<strong>HRFormer: High-Resolution Transformer for Dense Prediction.</strong>
 			<br><em>Y.H. Yuan, <strong>R. Fu</strong>, L. Huang, W.H. Lin, C. Zhang, X.L. Chen, J.D. Wang. </em>
 			<br><strong>NeurIPS 2021</strong></em>
-			<br><em class="small_font">We present a High-Resolution Transformer (HRFormer) that learns high-resolution representations for dense prediction tasks, in contrast to the original Vision Transformer that produces low-resolution representations and has high memory and computational cost. We demonstrate the effectiveness of the High-Resolution Transformer on both human pose estimation and semantic segmentation tasks, e.g., HRFormer outperforms Swin transformer by 1.3 AP on COCO pose estimation with 50% fewer parameters and 30% fewer FLOPs.</em>
+			<br><em class="small_font">We present a High-Resolution Transformer (HRFormer) that learns high-resolution 
+				representations for dense prediction tasks. We demonstrate the effectiveness 
+				of the HRFormer on both human pose estimation and semantic segmentation tasks.</em>
 			<br><a href="https://arxiv.org/abs/2110.09408" class="small_font">[paper]</a>
-			<a href="https://github.com/HRNet/HRFormer" class="small_font">[github]</a>	
+			<a href="https://github.com/HRNet/HRFormer" class="small_font">[project]</a>	
+		</div>
+
+		<div class="c_public">
+			<div class="disp_wrapper">
+				<!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
+					<img src="./img/project_odf.jpg" class="project_img" title="ODF Structure">
+				<!-- </a> -->
+				<!-- <p class="small_font">click image for details</p> -->
+			</div>
+			<strong>NeuralODF: Learning Omnidirectional Distance Fields for 3D Shape Representation.</strong>
+			<br><em>T. Houchens, C.Y. Lu, S. Duggal, <strong>R. Fu</strong>, S. Srinath. </em>
+			<!-- <br><strong>CoRR</strong></em> -->
+			<br><em class="small_font">We propose Omnidirectional Distance Fields (ODFs), a new 3D shape representation 
+				that encodes geometry by storing the distance to the object’s surface from any 3D position in any 
+				viewing direction. We also introduce efficient forward mapping algorithms for transforming ODFs to and
+				from common 3D representations.</em>
+			<br><a href="https://arxiv.org/pdf/2206.05837" class="small_font">[paper]</a>
 		</div>
 
 		<div class="c_public">
 				<div class="disp_wrapper">
-					<a href="./img/project1.jpg" data-lightbox="project1" data-title="RISA-Net Structure">
-						<img src="./img/project1.jpg" class="project_img" title="RISA-Net Structure">
-					</a>
-					<p class="small_font">click image for details</p>
+					<!-- <a href="./img/project_risanet.png" data-lightbox="project1" data-title="RISA-Net Structure"> -->
+						<img src="./img/project_risanet.png" class="project_img" title="RISA-Net Structure">
+					<!-- </a> -->
+					<!-- <p class="small_font">click image for details</p> -->
 				</div>
 				<strong>RISA-Net: Rotation-Invariant Structure-Aware Network for Fine-Grained 3D Shape Retrieval.</strong>
 				<br><em><strong>R. Fu</strong>, J. Yang, J.W. Sun, F.L. Zhang, Y.K. Lai, L. Gao. </em>
-				<br><em>CoRR </em>
-				<br><em class="small_font">We introduce a novel deep architecture, RISA-Net, which learns rotation invariant 3D shape descriptors that are capable of encoding fine-grained geometric information and structural information, and thus achieve accurate results on the task of fine-grained 3D object retrieval. We also build and publish a new 3D shape dataset with sub-class labels for validating the performance of fine-grained 3D shape retrieval methods.</em>
+				<!-- <br><em>CoRR </em> -->
+				<br><em class="small_font">We introduce RISA-Net, which learns rotation invariant 
+					3D shape descriptors and achieve accurate results on the task of fine-grained 3D object retrieval. We also build and publish 
+					a new 3D shape dataset for fine-grained 3D shape retrieval.</em>
 				<br><a href="https://arxiv.org/abs/2010.00973" class="small_font">[paper]</a>
-				<a href="https://github.com/IGLICT/RisaNET" class="small_font">[github]</a>
+				<a href="https://github.com/IGLICT/RisaNET" class="small_font">[project]</a>
 				<a href="https://drive.google.com/drive/folders/1BpwtlhrYfR5xGcXGoYFjo9bQFtw4nFvP" class="small_font">[dataset]</a>
 				
 		</div>
@@ -184,7 +265,7 @@
 
 		<div class="c_education">
 			<strong>BROWN UNIVERSITY</strong>
-			<em class="dates">Sept.2021 – Jun.2026(expected)</em>
+			<em class="dates">Sept.2021 – Present</em>
 			<div class="clearfloat"></div>
 			<div class="logo_wrapper">
 				<img class="schoollogo" src="./img/brown_logo.png" alt="BROWN Logo" />
@@ -224,17 +305,41 @@
 			</ul>
 
 		</div>
+
+		<div class="c_education">
+			<strong>BEIJING NATIONAL DAY SCHOOL</strong>
+			<em class="dates">Sept. 2011-Jul. 2017</em>
+			<div class="clearfloat"></div>
+			<div class="logo_wrapper">
+				<img class="schoollogo" src="./img/bnds_logo.png" alt="USC Logo" />
+			</div>
+			<ul>
+			<li>Title: Student.</li>
+			<li>GPA: 3.9/4.0.</li>
+			</ul>
+
+		</div>
 	</div>
 
 	<div class="c_intern_wrapper">
-		<div class="c_font1_1">Internship</div>
+		<div class="c_font1_1">Employment</div>
+
+		<div class="c_intern">
+			<strong>Research intern: Autodesk Inc.</strong>
+				<em class="dates">May. 2022 – Present</em>
+			<br><br><em>Group: AI Lab</em><em class="dates">Toronto, Canada</em>
+			<ul>
+				<li>Proposed a transformer-based neural network for dense prediction tasks.</li>
+				<li>Achieved state-of-the-art performance on COCO human pose estimation benchmark.</li>
+			</ul>
+		</div>
+
 		<div class="c_intern">
 			<strong>Research intern: Microsoft Research, Asia</strong>
 				<em class="dates">Mar. 2021 – July. 2021</em>
 			<br><br><em>Group: Speech Group, Visual Computing Group</em><em class="dates">Beijing, China</em>
 			<ul>
-				<li>Proposed a transformer-based neural network for dense prediction tasks.</li>
-				<li>Achieved state-of-the-art performance on COCO human pose estimation benchmark.</li>
+				<li>Research on High-Resolution Machine Perception Backbone</li>
 			</ul>
 		</div>
 
@@ -243,8 +348,8 @@
 				<em class="dates">May. 2020 – Nov. 2020</em>
 			<br><br><em>Advisor: Prof. Hao Su.</em><em class="dates">San Diego, CA, USA</em>
 			<ul>
-				<li>Studied the problem of geometric based manipulation for efficient exploration.</li>
-				<li>Proposed a novel neural network architecture that predicts grasp proposals efficiently and effectively</li>
+				<li>Research on Robot Grasping with Two-Finger Grippers.</li>
+				<li>Research on Humanoid Robot Grippers.</li>
 			</ul>
 		</div>
 
@@ -253,8 +358,8 @@
 					<em class="dates">Jul. 2019 – Nov. 2020</em>
 				<br><br><em>Advisor: Prof. Lin Gao</em> <em class="dates">Beijing, China</em>
 				<ul>
-					<li>Fine-grained 3D Shape Retrieval: Proposed a deep architecture for rotation-invariant fine-grained 3D shape retrieval.</li>
-					<li>Talking Head Generation: Designed a pipeline that generates high-quality speech-driven talking head video with expressive emotion.</li>
+					<li>Research on Fine-grained 3D Shape Retrieval.</li>
+					<li>Research on Talking Head Generation.</li>
 				</ul>
 		</div>
 	</div>
@@ -266,7 +371,7 @@
 <!-------------------------------------------------- Content Contact-------------------------------------------------->
 <div class="content">
 	<div class="c_contact_wrapper">
-		<div id="c_contact_biography">
+	<!-- 	<div id="c_contact_biography">
 			<span class="c_font1_1">Contact me:</span><br>
 			<p class="c_font3">
 			Email: <a href="mailto:rao_fu@brown.edu">rao_fu@brown.edu</a>  
@@ -274,12 +379,12 @@
 			<p class="c_font3">
 			Mail: Brown University Box 1910, Providence, RI 02912
 			</p>
-		</div>
+		</div> -->
 
 		<div id="c_contact_profile">
 			<span class="c_font1_1">Buy me a Boba:</span><br>
 			<p class="c_font3">
-			If you like my homepage and think it's useful, welcome to buy me a Boba! Tips via Wechat or Paypal down here:
+			If you like my homepage and think it's useful, welcome to buy me a Boba via Wechat or Paypal down here:
 			</p>
 			<div id="c_contact_thumbnail_1">
 			</div>
@@ -295,7 +400,7 @@
 <div class="clearfloat"></div>
 <!-------------------------------------------------- Footer -------------------------------------------------->
 <div id="footer">
-	<div class="b_thumbnail">
+	<!-- <div class="b_thumbnail">
 		<img class="b_img" src="img/i3.png" alt="email">
 	</div>
 	<div class="b_font">
@@ -306,12 +411,12 @@
 	</div>
 	<div class="b_font">
 		<a href="https://github.com/freddierao">github.com/freddierao</a>  
-	</div>	
+	</div>	 -->
 	<div class="b_thumbnail">
 		<img class="b_img" src="img/i2.png" alt="copyright">
 	</div>	
 	<div class="b_font">
-		&copy; 2021 by Rao FU
+		&copy; 2022 by Rao FU
 	</div>		
 	<div class="clearfloat"></div>
 </div><!-- Footer -->
