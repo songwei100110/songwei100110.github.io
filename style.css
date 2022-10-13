@@ -378,7 +378,7 @@
 		color: white;
 	}
 
-	#nav a.active {background-color:maroon;color:#fff;}
+	#nav a.active {background-color:maroon;color:#ffffff;}
 
 	.btn {
 		border: none;
@@ -397,12 +397,12 @@
 
 	.btn:hover {
 		background-color:maroon;
-		color:#fff;
+		color:#ffffff;
 	}
 
 	.active {
 		background-color:maroon;
-		color:#fff;
+		color:#ffffff;
 	}
 
 	.dates{
@@ -491,7 +491,7 @@
 	.overlay {
 		/*background:#000; */
 		background-color: rgba(0, 0, 0, 0.6);
-		color:#fff;
+		color:#ffffff;
 		position:absolute;
 		top:0;
 		left:0px;
