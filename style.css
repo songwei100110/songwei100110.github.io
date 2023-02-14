@@ -107,13 +107,13 @@
 	}
 	
 	#c_biography a:link {
-		color: #990000;
+		color: #0088d2;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
 
 	#c_biography a:visited {
-		color: #990000;
+		color: #0088d2;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
@@ -132,13 +132,13 @@
 
 
 	#c_contact_biography a:link {
-		color: #990000;
+		color: #0088d2;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
 
 	#c_contact_biography a:visited {
-		color: #990000;
+		color: #0088d2;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
@@ -378,7 +378,7 @@
 		color: white;
 	}
 
-	#nav a.active {background-color:maroon;color:#ffffff;}
+	#nav a.active {background-color:#25b0f3;color:#ffffff;}
 
 	.btn {
 		border: none;
@@ -396,12 +396,12 @@
 	  }
 
 	.btn:hover {
-		background-color:maroon;
+		background-color:#25b0f3;
 		color:#ffffff;
 	}
 
 	.active {
-		background-color:maroon;
+		background-color:#25b0f3;
 		color:#ffffff;
 	}
 
