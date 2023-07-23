@@ -1,410 +1,721 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="keywords" content="Rao FU, Rao FU Homepage, Rao Fu UCAS, Rao Fu Brown, Computer Science, Computer Vision, Graphics, Deep Learning, Robotics">
-	<meta name="description" content="Rao FU's personal website. A PhD student in Computer Science at Brown University with research interests in Computer Vision, Graphics, Deep Learning, and Robotics.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rao FU | Homepage</title>
-	<link href="style.css" rel="stylesheet" />
-</head>	
+    <meta charset="UTF-8">
+    <title>Rao FU | Homepage</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+        }
+
+        .h1 {
+            text-shadow: -5px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay p {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .thumbnail {
+            background-color: #ffffff;
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            /*		border: 1px solid #000;*/
+            overflow: hidden;
+            border-radius: 50%;
+            /* add relative position */
+            position: relative;
+            text-align: center;
+            color: white;
+            font-size: 0.6em;
+            cursor: pointer;
+
+        }
+
+        .overlay p {
+            font-size: 0.6em;
+        }
+
+        /*.overlay {*/
+        /*    !*background:#000; *!*/
+        /*    background-color: rgba(0, 0, 0, 0.6);*/
+        /*    color: #ffffff;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0px;*/
+        /*    right: 0px;*/
+        /*    bottom: 0px;*/
+        /*    text-align: center;*/
+        /*    visibility: hidden;*/
+        /*    !*padding-top:35%;*!*/
+        /*}*/
+
+        .thumbnail:hover .overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .a1 {
+            text-decoration: none;
+        }
+
+        .col1:hover {
+            background-color: #0088d2;
+        }
+
+        .el-collapse-item__header {
+            border: none;
+        }
+
+        .el-collapse-item__wrap {
+            border: none;
+        }
+
+        .el-collapse {
+            border: none;
+        }
+        ul.no-bullets {
+            list-style-type: none;
+        }
+    </style>
+</head>
 
 <body>
-<!-------------------------------------------------- Header -------------------------------------------------->
-<div id="header">
-	<h1> Rao FU </h1>
-	<h2>Computer Vision/Graphics/Robotics</h2>
-</div><!-- Header -->
+<div id="app">
+    <!-- Title Paragraph -->
+    <el-row>
+        <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="text-align: center;margin-top: 10px">
+            <div class="grid-content bg-purple">
+                <h1 style="font-size: 45px" class="h1">Rao FU</h1>
+            </div>
+        </el-col>
+    </el-row>
+    <el-row>
+        <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="text-align: center">
+            <div class="grid-content bg-purple">
+                <h2 class="h1" style="font-size: 16px">Computer Vision/Graphics/Robotics</h2>
+            </div>
+        </el-col>
+    </el-row>
 
-<nav id="nav-wrapper">
-	<div id="nav">
-		<button class="btn active" onclick="navigate('content_home')">Home</button>
-		<button class="btn" onclick="navigate('content_project')">Research</button>
-		<button class="btn" onclick="navigate('content_exp')">Experience</button>
-		<button class="btn" onclick="navigate('My_CV.pdf', true)">CV</button>
-		<button class="btn" onclick="navigate('c_contact_biography')">Contact</button>
-	</div>
-</nav>
+    <!-- Nav Bar -->
+    <el-row type="flex" justify="center">
+        <el-col :xs="24" :sm="24" :md="16" :lg="16" :xl="16" style="text-align: center;margin: 0px auto;">
+            <el-row type="flex" justify="center" style="background-color: black;height: 40px;line-height: 40px">
+                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1"
+                        style="text-align: center;font-size: 14px;background-color: #0088d2;">
+                    <div style="display: inline-block"><a class="a1" href="#content_home" style="color: white">Home</a>
+                    </div>
+                </el-col>
+                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
+                    <div style="display: inline-block"><a class="a1" style="color: white" href="#content_project">Research</a>
+                    </div>
+                </el-col>
+                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
+                    <div style="display: inline-block"><a class="a1" style="color: white"
+                                                          href="#content_exp">Education</a></div>
+                </el-col>
+                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
+                    <div style="display: inline-block"><a class="a1" style="color: white" href="#">CV</a>
+                    </div>
+                </el-col>
+                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
+                    <div style="display: inline-block"><a class="a1" style="color: white" href="#">Contact</a>
+                    </div>
+                </el-col>
+            </el-row>
+        </el-col>
+    </el-row>
 
-<!-------------------------------------------------- Content Home-------------------------------------------------->
-<div class="content"  id="content_home">
+    <!-- Biography -->
+    <el-row type="flex" justify="center" id="content_home">
+        <el-col :xs="12" :sm="12" :md="10" :lg="10" :xl="10" style="margin-top: 50px;line-height: 20px">
+            <strong id="c_font1" style="font-size: 40px">Hello,</strong><br><br>
+            <span class="c_font2" style="font-size: 20px;padding-top: 50px">a bit about me:</span><br><br>
+            <p class="c_font3">
+                I'm a PhD student in <a style="color:#0088d2;" href="https://cs.brown.edu/">Computer Science</a> at <a
+                    style="color:#0088d2;" href="https://www.brown.edu/">Brown University</a>.
+                My research interests are in 3D Vision, Graphics, and Robotics.
+                I'm fortunate to work with Prof. <a style="color:#0088d2;" href="https://srinathsridhar.com">Srinath
+                Sridhar</a> and Prof. <a
+                    style="color:#0088d2;" href="https://dritchie.github.io/">Daniel Ritchie</a> at <a
+                    style="color:#0088d2;" href="https://ivl.cs.brown.edu/">Brown
+                IVL</a> & <a style="color:#0088d2;" href="https://visual.cs.brown.edu/">Brown VC Group</a>.
+            </p>
+            <p class="c_font3" style="margin-top: 25px">
+                Prior to this, I earned my Bachelor of Engineering degree from the <a style="color:#0088d2;"
+                                                                                      href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University
+                of
+                the Chinese Academy of Sciences</a>.
+                I also had a wonderful time at the <a style="color:#0088d2;" href="https://www.usc.edu/">University of
+                Southern California</a>,
+                the <a style="color:#0088d2;" href="https://ucsd.edu/">University of California San Diego</a>,
+                <a style="color:#0088d2;" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft
+                    Research
+                    Asia</a>,
+                and <a style="color:#0088d2;" href="https://www.autodesk.com/research/overview">Autodesk Research</a>.
+            </p>
+        </el-col>
+        <el-col :xs="8" :sm="8" :md="5" :lg="5" :xl="5" style="text-align: center;margin-top: 50px">
+            <div class="image-container">
+                <img src="./img/profile_2023.jpg" alt="Your Image" width="300px" height="300px"
+                     style="border-radius: 300px">
+                <div class="overlay" style="border-radius: 300px;width: 300px;height: 300px;">
+                    <p style="font-size: 0.6em">
+                        勿戳！<br>
+                        Don't poke my cheeks!<br>
+                        ¡no me toques las mejillas! <br>
+                        मेरे गाल मत दबाओ! <br>
+                        আমার গালে খোঁচা দিও না! <br>
+                        não cutuque minhas bochechas! <br>
+                        не тыкай меня в щеки! <br>
+                        私の頬をつつかないで！ <br>
+                        ਮੇਰੀਆਂ ਗੱਲ੍ਹਾਂ ਨੂੰ ਨਾ ਮਾਰੋ! <br>
+                        唔好戳我嘅脸颊！<br>
+                        đừng chọc má tôi!<br>
+                        నా బుగ్గలు కుట్టకు!<br>
+                        yanaklarımı dürtme!<br>
+                        내 뺨을 찌르지 마! <br>
+                        ne touchez pas mes joues!<br>
+                        stoß mir nicht in die Wangen!<br>
+                        என் கன்னங்களை குத்தாதே!<br>
+                        میرے گالوں کو مت مارو!<br>
+                        ojo nyocot pipiku!<br>
+                        non toccarmi le guance!<br>
+                        لا تكز خدي!<br>
+                    </p>
+                </div>
+            </div>
+        </el-col>
+    </el-row>
 
-	<div class="c_home_wrapper">
-		<div id="c_biography">
-			<strong id="c_font1">Hello,</strong><br>
-			<span class="c_font2">a bit about me:</span><br>
-			<p class="c_font3">
-				I'm a PhD student in <a href="https://cs.brown.edu/">Computer Science</a> at <a href="https://www.brown.edu/">Brown University</a>. 
-				My research interests are in Computer Vision, Graphics, Deep Learning, and Robotics. 
-				I'm fortunate to work with Prof. <a href="https://srinathsridhar.com">Srinath Sridhar</a> and Prof. <a href="https://dritchie.github.io/">Daniel Ritchie</a> at <a href="https://ivl.cs.brown.edu/">Brown IVL</a> & <a href="https://visual.cs.brown.edu/">Brown VC Group</a>. 
-				I'm excited to join <a href="https://research.facebook.com/careers/">Meta Research</a> as a research scientist intern this summer. 
-			</p>
-			<p class="c_font3">
-				Prior to this, I earned my Bachelor of Engineering degree from the <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University of the Chinese Academy of Sciences</a>. 
-				I also had a wonderful time at the <a href="https://www.usc.edu/">University of Southern California</a>, 
-				the <a href="https://ucsd.edu/">University of California San Diego</a>, 
-				<a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>, 
-				and <a href="https://www.autodesk.com/research/overview">Autodesk Research</a>.
-			</p>
-		</div>
-
-		<div id="c_profile">
-			<div class="c_thumbnail">
-				<img src="img/profile_2023.jpg" id="buttons" alt="profile_button" >
-				<div class="overlay">
-					<p>
-						勿戳！<br>
-						Don't poke my cheeks!<br>
-						¡no me toques las mejillas! <br>
-						मेरे गाल मत दबाओ! <br>
-						আমার গালে খোঁচা দিও না! <br>
-						não cutuque minhas bochechas! <br>
-						не тыкай меня в щеки! <br>
-						私の頬をつつかないで！ <br>
-						ਮੇਰੀਆਂ ਗੱਲ੍ਹਾਂ ਨੂੰ ਨਾ ਮਾਰੋ! <br>
-						唔好戳我嘅脸颊！<br>
-						đừng chọc má tôi!<br>
-						నా బుగ్గలు కుట్టకు!<br>
-						yanaklarımı dürtme!<br>
-						내 뺨을 찌르지 마! <br>
-						ne touchez pas mes joues!<br>
-						stoß mir nicht in die Wangen!<br>
-						என் கன்னங்களை குத்தாதே!<br>
-						میرے گالوں کو مت مارو!<br>
-						ojo nyocot pipiku!<br>
-						non toccarmi le guance!<br>
-						لا تكز خدي!<br>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="c_info">
-			<span class="c_font2_1"> and more about me... </span><br>
-			<div class="thumbnail">
-				<img src="img/email_icon.jpg" id="button0" alt="email_button" >
-				<div class="overlay" onclick="window.location.href = 'mailto:rao_fu@brown.edu';" >
-					<p>Email to<br>Say Hi</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-
-			<div class="thumbnail">
-				<img src="img/cv_icon.jpg" id="button1" alt="cv_button" >
-				<div class="overlay"  onclick="window.location.href='./resource/My_CV.pdf'; " >
-					<p>CV/<br>Resume</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/gs_icon.png" id="button2" alt="google_button" >
-				<div class="overlay" onclick="window.location.href = 'https://scholar.google.com/citations?hl=en&user=VWMWQEcAAAAJ';" >
-					<p>Google<br>Scholar</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/linkedin_icon.png" id="button3" alt="lkin_icon" >
-				<div class="overlay" onclick="window.location.href = 'https://www.linkedin.com/in/rao-fu-245269210/';" >
-					<p>LinkedIn<br>Profile</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/ucas_button.png" id="button4" alt="ucas_button" >
-				<div class="overlay" onclick="window.location.href = 'https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/';" >
-					<p>B.E.@<br>UCAS</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/Brown_icon.jpg" id="button5" alt="brown_button">
-				<div class="overlay" onclick="window.location.href = 'https://www.brown.edu/';" >
-					<p>Ph.D.@<br>Brown
-					</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/cat_icon.jpg" id="button6" alt="cat_button">
-				<div class="overlay" onclick="window.location.href = 'https://instagram.com/inocchi_mew?r=nametag';" >
-					<p>My Cat<br>Inocchi
-					</p>
-				</div>
-			</div> <!-- .thumbnail -->
-
-			<div class="thumbnail">
-				<img src="img/art_icon.jpg" id="button6" alt="art_button">
-				<div class="overlay" onclick="window.location.href = './index.html#content_home';" >
-					<p>Arts<br>Todo...</p>
-				</div>
-			</div> <!-- .thumbnail -->
-			
-		</div>
-
-		<div id="c_info">
-			<span class="c_font2_1"> <strong>Welcome to Reach Out to Me! </strong></span><br>
-			If you are an undergrad/master student/gap-year student/... and interested in working with me, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSf10zr1Qshz9WnXkUN4Z47jo4A4eerlJ3YBGQxRBKshCdO1QQ/viewform?usp=sf_link">form</a> and I'll contact you shortly!
-		</div>
-
-	</div><!-- Home Wrapper-->
-
-	<div class="clearfloat"></div>
-</div><!-- Content Home-->
-
-<!-------------------------------------------------- Content Project -------------------------------------------------->
-<div class="content">
-
-	<div class="c_public_wrapper" id="content_project">
-		<div class="c_font1_1">Research Paper</div>
-
-		<div class="c_public">
-			<div class="disp_wrapper">
-				<!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
-					<img src="./img/project_clipsculptor.jpg" class="project_img" title="TextCraft Structure">
-				<!-- </a> -->
-				<!-- <p class="small_font">click image for details</p> -->
-			</div>
-			<strong>CLIP-Sculptor: Zero-Shot Generation of High-Fidelity and Diverse Shapes from Natural Language.</strong>
-			<br><em>A. Sanghi, <strong>R. Fu</strong>, V. Liu, K. Willis,  H. Shayani, A.H. Khasahmadi, S. Sridhar, D. Ritchie. </em>
-			<br><strong>CVPR 2023</strong></em>
-			<br><em class="small_font">We introduce CLIP-Sculptor, a method to address these limitations by producing high-fidelity 
-				and diverse 3D shapes without the need for (text, shape) pairs for training.</em>
-			<br><a href="https://arxiv.org/pdf/2211.01427" class="small_font">[paper]</a>
-			<a href="https://ivl.cs.brown.edu/#/projects/clip-sculptor" class="small_font">[project]</a>	
-		</div>
-
-		<div class="c_public">
-			<div class="disp_wrapper">
-				<!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
-					<img src="./img/project_shapecrafter.jpg" class="project_img" title="ShapeCrafter Structure">
-				<!-- </a> -->
-				<!-- <p class="small_font">click image for details</p> -->
-			</div>
-			<strong>ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model.</strong>
-			<br><em><strong>R. Fu</strong>, X. Zhan, Y.W. Chen, D. Ritchie, S. Sridhar. </em>
-			<br><strong>NeurIPS 2022</strong></em>
-			<br><em class="small_font">We present ShapeCrafter, a neural network for recursive text-conditioned 3D shape generation. 
-				Our method supports shape editing, extrapolation, and can enable new applications in human-machine collaboration for creative design.</em>
-			<br><a href="https://arxiv.org/abs/2207.09446" class="small_font">[paper]</a>
-			<a href="https://ivl.cs.brown.edu/#/projects/shapecrafter" class="small_font">[project]</a>	
-		</div>
-
-		<div class="c_public">
-			<div class="disp_wrapper">
-				<!-- <a href="./img/project_hrformer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
-					<img src="./img/project_hrformer.png" class="project_img" title="HRFormer2 Structure">
-				<!-- </a> -->
-				<!-- <p class="small_font">click image for details</p> -->
-			</div>
-			<strong>HRFormer: High-Resolution Transformer for Dense Prediction.</strong>
-			<br><em>Y.H. Yuan, <strong>R. Fu</strong>, L. Huang, W.H. Lin, C. Zhang, X.L. Chen, J.D. Wang. </em>
-			<br><strong>NeurIPS 2021</strong></em>
-			<br><em class="small_font">We present a High-Resolution Transformer (HRFormer) that learns high-resolution 
-				representations for dense prediction tasks. We demonstrate the effectiveness 
-				of the HRFormer on both human pose estimation and semantic segmentation tasks.</em>
-			<br><a href="https://arxiv.org/abs/2110.09408" class="small_font">[paper]</a>
-			<a href="https://github.com/HRNet/HRFormer" class="small_font">[project]</a>	
-		</div>
-
-		<div class="c_public">
-			<div class="disp_wrapper">
-				<!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
-					<img src="./img/project_odf.jpg" class="project_img" title="ODF Structure">
-				<!-- </a> -->
-				<!-- <p class="small_font">click image for details</p> -->
-			</div>
-			<strong>NeuralODF: Learning Omnidirectional Distance Fields for 3D Shape Representation.</strong>
-			<br><em>T. Houchens, C.Y. Lu, S. Duggal, <strong>R. Fu</strong>, S. Srinath. </em>
-			<!-- <br><strong>CoRR</strong></em> -->
-			<br><em class="small_font">We propose Omnidirectional Distance Fields (ODFs), a new 3D shape representation 
-				that encodes geometry by storing the distance to the object’s surface from any 3D position in any 
-				viewing direction. We also introduce efficient forward mapping algorithms for transforming ODFs to and
-				from common 3D representations.</em>
-			<br><a href="https://arxiv.org/pdf/2206.05837" class="small_font">[paper]</a>
-		</div>
-
-		<div class="c_public">
-				<div class="disp_wrapper">
-					<!-- <a href="./img/project_risanet.png" data-lightbox="project1" data-title="RISA-Net Structure"> -->
-						<img src="./img/project_risanet.png" class="project_img" title="RISA-Net Structure">
-					<!-- </a> -->
-					<!-- <p class="small_font">click image for details</p> -->
-				</div>
-				<strong>RISA-Net: Rotation-Invariant Structure-Aware Network for Fine-Grained 3D Shape Retrieval.</strong>
-				<br><em><strong>R. Fu</strong>, J. Yang, J.W. Sun, F.L. Zhang, Y.K. Lai, L. Gao. </em>
-				<!-- <br><em>CoRR </em> -->
-				<br><em class="small_font">We introduce RISA-Net, which learns rotation invariant 
-					3D shape descriptors and achieve accurate results on the task of fine-grained 3D object retrieval. We also build and publish 
-					a new 3D shape dataset for fine-grained 3D shape retrieval.</em>
-				<br><a href="https://arxiv.org/abs/2010.00973" class="small_font">[paper]</a>
-				<a href="https://github.com/IGLICT/RisaNET" class="small_font">[project]</a>
-				<a href="https://drive.google.com/drive/folders/1BpwtlhrYfR5xGcXGoYFjo9bQFtw4nFvP" class="small_font">[dataset]</a>
-				
-		</div>
-	</div>
-	<div class="clearfloat"></div>
-</div><!-- Content Project-->
-
-<!-------------------------------------------------- Content Experiment-------------------------------------------------->
-<div class="content">
-
-	<div class="c_education_wrapper" id="content_exp">
-		<div class="c_font1_1">Education</div>
-
-		<div class="c_education">
-			<strong>BROWN UNIVERSITY</strong>
-			<em class="dates">Sept.2021 – Present</em>
-			<div class="clearfloat"></div>
-			<div class="logo_wrapper">
-				<img class="schoollogo" src="./img/brown_logo.png" alt="BROWN Logo" />
-			</div>
-			<ul>
-			<li>Title: Computer Science Ph.D. Student</li>
-			<li>Concentration: Vision, Graphics and Robotics</li>
-			</ul>
-		</div>
-
-		<div class="c_education">
-			<strong>UNIVERSITY OF CHINESE ACADEMY OF SCIENCES</strong>
-			<em class="dates">Sept. 2017-Jul. 2021</em>
-			<div class="clearfloat"></div>
-			<div class="logo_wrapper">
-				<img class="schoollogo" src="./img/cas_logo.jpg" alt="CAS Logo" />
-			</div>
-			<ul>
-			<li>Degree: Bachelor of Computer Science.</li>
-			<li><em>Outstanding Thesis Awards.</em> </li>
-			<li><em></em>National Inspirational Scholarship(5%).</em></li>
-			</ul>
-		</div>
-
-		<div class="c_education">
-			<strong>UNIVERSITY OF CALIFORNIA, SAN DIEGO</strong>
-			<em class="dates">May. 2020-Aug. 2020</em>
-			<div class="clearfloat"></div>
-			<div class="logo_wrapper">
-				<img class="schoollogo" src="./img/ucsd_logo.png" alt="UCSD Logo" />
-			</div>
-			<ul>
-			<li>Title: Visiting Scholar.</li>
-			</ul>
-
-		</div>
-
-		<div class="c_education">
-			<strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong>
-			<em class="dates">Jan. 2020-May. 2020</em>
-			<div class="clearfloat"></div>
-			<div class="logo_wrapper">
-				<img class="schoollogo" src="./img/usc_logo.png" alt="USC Logo" />
-			</div>
-			<ul>
-			<li>Title: Visiting Student.</li>
-			</ul>
-
-		</div>
-
-		<div class="c_education">
-			<strong>BEIJING NATIONAL DAY SCHOOL</strong>
-			<em class="dates">Sept. 2011-Jul. 2017</em>
-			<div class="clearfloat"></div>
-			<div class="logo_wrapper">
-				<img class="schoollogo" src="./img/bnds_logo.png" alt="USC Logo" />
-			</div>
-			<ul>
-			<li>Title: Student.</li>
-			</ul>
-
-		</div>
-	</div>
-
-	<div class="c_intern_wrapper">
-		<div class="c_font1_1">Employment</div>
-
-		<div class="c_intern">
-			<strong>Research intern: Autodesk Inc.</strong>
-				<em class="dates">May. 2022 – Sept. 2022</em>
-			<br><br><em>Group: AI Lab</em><em class="dates">Toronto, Canada</em>
-			<ul>
-				<li>Research on Lauguage-guided 3D Shape Generation.</li>
-			</ul>
-		</div>
-
-		<div class="c_intern">
-			<strong>Research intern: Microsoft Research, Asia</strong>
-				<em class="dates">Mar. 2021 – July. 2021</em>
-			<br><br><em>Group: Speech Group, Visual Computing Group</em><em class="dates">Beijing, China</em>
-			<ul>
-				<li>Research on High-Resolution Machine Perception Backbone</li>
-			</ul>
-		</div>
-
-		<div class="c_intern">
-			<strong>Research intern: University of California, San Diego</strong>
-				<em class="dates">May. 2020 – Nov. 2020</em>
-			<br><br><em>Advisor: Prof. Hao Su.</em><em class="dates">San Diego, CA, USA</em>
-			<ul>
-				<li>Research on Robot Grasping with Two-Finger Grippers.</li>
-				<li>Research on Humanoid Robot Grippers.</li>
-			</ul>
-		</div>
-
-		<div class="c_intern">
-				<strong>Research intern: Institute of Computing Technology, CAS.</strong>
-					<em class="dates">Jul. 2019 – Nov. 2020</em>
-				<br><br><em>Advisor: Prof. Lin Gao</em> <em class="dates">Beijing, China</em>
-				<ul>
-					<li>Research on Fine-grained 3D Shape Retrieval.</li>
-					<li>Research on Talking Head Generation.</li>
-				</ul>
-		</div>
-	</div>
-
-	<div class="clearfloat"></div>
-
-</div><!-- Content Experiment-->
-
-<!-------------------------------------------------- Content Contact-------------------------------------------------->
-<div class="content">
-	<div class="c_contact_wrapper">
-	<!-- 	<div id="c_contact_biography">
-			<span class="c_font1_1">Contact me:</span><br>
-			<p class="c_font3">
-			Email: <a href="mailto:rao_fu@brown.edu">rao_fu@brown.edu</a>  
-			</p>
-			<p class="c_font3">
-			Mail: Brown University Box 1910, Providence, RI 02912
-			</p>
-		</div> -->
-
-		<div id="c_contact_profile">
-			<span class="c_font1_1">Buy me a Boba:</span><br>
-			<p class="c_font3">
-			If you like my homepage and think it's useful, welcome to buy me a Boba via Wechat or Paypal down here:
-			</p>
-			<div id="c_contact_thumbnail_1">
-			</div>
-			<div id="c_contact_thumbnail_2">
-			</div>
-		</div>
-
-		<div class="clearfloat"></div>
-	</div><!-- Content Contact Wrapper-->
-</div><!-- Content Contact -->
+    <!-- Mini Biography -->
+    <el-row type="flex" justify="center">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <div id="c_info">
+                <span style="font-size: 20px"> and more about me... </span><br>
+                <div class="thumbnail">
+                    <img src="img/email_icon.jpg" id="button0" alt="email_button" width="60px" height="60px">
+                    <div class="overlay" onclick="window.location.href = 'mailto:rao_fu@brown.edu';">
+                        <p>Email to<br>Say Hi</p>
+                    </div>
+                </div> <!-- .thumbnail -->
 
 
-<div class="clearfloat"></div>
-<!-------------------------------------------------- Footer -------------------------------------------------->
-<div id="footer">
-	<div class="b_thumbnail">
-		<img class="b_img" src="img/i2.png" alt="copyright">
-	</div>	
-	<div class="b_font">
-		&copy; 2023 by Rao FU
-	</div>		
-	<div class="clearfloat"></div>
-</div><!-- Footer -->
-<script src="main.js"></script>
+                <div class="thumbnail">
+                    <img src="img/cv_icon.jpg" id="button1" alt="cv_button" width="60px" height="60px">
+                    <div class="overlay" onclick="window.location.href='./resource/My_CV.pdf'; ">
+                        <p>CV/<br>Resume</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/gs_icon.png" id="button2" alt="google_button" width="60px" height="60px">
+                    <div class="overlay"
+                         onclick="window.location.href = 'https://scholar.google.com/citations?hl=en&user=VWMWQEcAAAAJ';">
+                        <p>Google<br>Scholar</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/linkedin_icon.png" id="button3" alt="lkin_icon" width="60px" height="60px">
+                    <div class="overlay"
+                         onclick="window.location.href = 'https://www.linkedin.com/in/rao-fu-245269210/';">
+                        <p>LinkedIn<br>Profile</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/ucas_button.png" id="button4" alt="ucas_button" width="60px" height="60px">
+                    <div class="overlay"
+                         onclick="window.location.href = 'https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/';">
+                        <p>B.E.@<br>UCAS</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/Brown_icon.jpg" id="button5" alt="brown_button" width="60px" height="60px">
+                    <div class="overlay" onclick="window.location.href = 'https://www.brown.edu/';">
+                        <p>Ph.D.@<br>Brown
+                        </p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/cat_icon.jpg" id="button6" alt="cat_button" width="60px" height="60px">
+                    <div class="overlay"
+                         onclick="window.location.href = 'https://instagram.com/inocchi_mew?r=nametag';">
+                        <p>My Cat<br>Inocchi
+                        </p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+                <div class="thumbnail">
+                    <img src="img/art_icon.jpg" id="button7" alt="art_button" width="60px" height="60px">
+                    <div class="overlay" onclick="window.location.href = './index.html#content_home';">
+                        <p>Arts<br>Todo...</p>
+                    </div>
+                </div> <!-- .thumbnail -->
+
+            </div>
+        </el-col>
+    </el-row>
+
+    <el-row type="flex" justify="center">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <div>
+                <span class="c_font2_1"> <strong
+                        style="font-size: 18px">Welcome to Reach Out to Me! </strong></span><br>
+                If you are interested in working with me, please
+                fill out this <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf10zr1Qshz9WnXkUN4Z47jo4A4eerlJ3YBGQxRBKshCdO1QQ/viewform?usp=sf_link">form</a> or email me!
+            </div>
+        </el-col>
+    </el-row>
+
+    <!-- News -->
+    <el-row type="flex" justify="center" style="margin-top: 50px">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <el-collapse v-model="activeNames">
+                <h1>News</h1>
+                <ul class="no-bullets" style="padding-left: 50px;line-height: 1.5em">
+                    <li>[Aug 2023] I'm attending <a style="color:#0088d2;" href="https://s2023.siggraph.org//">Siggraph 2023</a> : See you in Los Angeles!
+                    </li>
+                    <li>[June 2023]I'm excited to join <a style="color:#0088d2;" href="https://research.facebook.com/careers/">Meta
+                        Research</a> as a research scientist intern this summer : See you in Menlo Park!
+                    </li>
+                </ul>
+                <el-collapse-item title="archived..." name="1" style="padding-left: 50px">
+                    <div class="no-bullets" style="font-size: 16px;color: #000000">
+                        <ul style="padding-left: 0px;line-height: 1.5em">
+                            <li>[Nov 2022] Invited talk at <a style="color:#0088d2;" href="https://mp.weixin.qq.com/s/bXYGGPjQw94Q4S7SVgrioA">ICT Turing Seminar</a>.
+                            </li>
+                            <li>[May 2022]I'm excited to join <a style="color:#0088d2;" href="https://www.autodesk.com/research/overview/">Autodesk
+                                Research</a> as a research intern this summer.
+                            </li>
+                        </ul>
+                    </div>
+                </el-collapse-item>
+            </el-collapse>
+        </el-col>
+    </el-row>
+
+    <!-- Research -->
+    <el-row type="flex" justify="center" id="content_project">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <div style="border-top: 2px black solid;margin-top: 50px">
+                <div style="margin-top: 50px;font-size: 30px">Research Paper</div>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10">
+                        <div class="disp_wrapper">
+                            <img src="./img/project_clipsculptor.jpg" width="300px" height="auto"
+                                 title="TextCraft Structure">
+                        </div>
+                    </el-col>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <strong>CLIP-Sculptor: Zero-Shot Generation of High-Fidelity and Diverse Shapes from Natural
+                            Language.</strong>
+                        <br><em>A. Sanghi, <strong>R. Fu</strong>, V. Liu, K. Willis, H. Shayani, A.H. Khasahmadi, S.
+                        Sridhar, D. Ritchie. </em>
+                        <br><strong>CVPR 2023</strong></em>
+                        <br><em class="small_font">We introduce CLIP-Sculptor, a method to address these limitations by
+                        producing high-fidelity
+                        and diverse 3D shapes without the need for (text, shape) pairs for training.</em>
+                        <br><a href="https://arxiv.org/pdf/2211.01427" class="small_font">[paper]</a>
+                        <a href="https://ivl.cs.brown.edu/#/projects/clip-sculptor" class="small_font">[project]</a>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10">
+                        <div class="disp_wrapper">
+                            <!-- <a href="./img/HRFormer.png" data-lightbox="project1" data-title="HRFormer2 Structure"> -->
+                            <img src="./img/project_shapecrafter.jpg" width="300px" height="auto"
+                                 title="ShapeCrafter Structure">
+                            <!-- </a> -->
+                            <!-- <p class="small_font">click image for details</p> -->
+                        </div>
+                    </el-col>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <strong>ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model.</strong>
+                        <br><em><strong>R. Fu</strong>, X. Zhan, Y.W. Chen, D. Ritchie, S. Sridhar. </em>
+                        <br><strong>NeurIPS 2022</strong></em>
+                        <br><em class="small_font">We present ShapeCrafter, a neural network for recursive
+                        text-conditioned 3D shape generation.
+                        Our method supports shape editing, extrapolation, and can enable new applications in
+                        human-machine collaboration for creative design.</em>
+                        <br><a href="https://arxiv.org/abs/2207.09446" class="small_font">[paper]</a>
+                        <a href="https://ivl.cs.brown.edu/#/projects/shapecrafter" class="small_font">[project]</a>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10">
+                        <div class="disp_wrapper">
+                            <img src="./img/project_hrformer.png" width="300px" height="auto"
+                                 title="HRFormer2 Structure">
+                        </div>
+                    </el-col>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <strong>HRFormer: High-Resolution Transformer for Dense Prediction.</strong>
+                        <br><em>Y.H. Yuan, <strong>R. Fu</strong>, L. Huang, W.H. Lin, C. Zhang, X.L. Chen, J.D. Wang.
+                    </em>
+                        <br><strong>NeurIPS 2021</strong></em>
+                        <br><em class="small_font">We present a High-Resolution Transformer (HRFormer) that learns
+                        high-resolution
+                        representations for dense prediction tasks. We demonstrate the effectiveness
+                        of the HRFormer on both human pose estimation and semantic segmentation tasks.</em>
+                        <br><a href="https://arxiv.org/abs/2110.09408" class="small_font">[paper]</a>
+                        <a href="https://github.com/HRNet/HRFormer" class="small_font">[project]</a>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10">
+                        <div class="disp_wrapper">
+                            <img src="./img/project_odf.jpg" width="300px" height="auto" title="ODF Structure">
+                        </div>
+                    </el-col>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <strong>NeuralODF: Learning Omnidirectional Distance Fields for 3D Shape
+                            Representation.</strong>
+                        <br><em>T. Houchens, C.Y. Lu, S. Duggal, <strong>R. Fu</strong>, S. Srinath. </em>
+                        <br><em class="small_font">We propose Omnidirectional Distance Fields (ODFs), a new 3D shape
+                        representation
+                        that encodes geometry by storing the distance to the object’s surface from any 3D position in
+                        any
+                        viewing direction. We also introduce efficient forward mapping algorithms for transforming ODFs
+                        to and
+                        from common 3D representations.</em>
+                        <br><a href="https://arxiv.org/pdf/2206.05837" class="small_font">[paper]</a>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10">
+                        <div class="disp_wrapper">
+                            <img src="./img/project_risanet.png" width="300px" height="auto" title="RISA-Net Structure">
+                        </div>
+                    </el-col>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <strong>RISA-Net: Rotation-Invariant Structure-Aware Network for Fine-Grained 3D Shape
+                            Retrieval.</strong>
+                        <br><em><strong>R. Fu</strong>, J. Yang, J.W. Sun, F.L. Zhang, Y.K. Lai, L. Gao. </em>
+                        <br><em class="small_font">We introduce RISA-Net, which learns rotation invariant
+                        3D shape descriptors and achieve accurate results on the task of fine-grained 3D object
+                        retrieval. We also build and publish
+                        a new 3D shape dataset for fine-grained 3D shape retrieval.</em>
+                        <br><a href="https://arxiv.org/abs/2010.00973" class="small_font">[paper]</a>
+                        <a href="https://github.com/IGLICT/RisaNET" class="small_font">[project]</a>
+                        <a href="https://drive.google.com/drive/folders/1BpwtlhrYfR5xGcXGoYFjo9bQFtw4nFvP"
+                           class="small_font">[dataset]</a>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+    </el-row>
+
+    <!-- Education -->
+    <el-row type="flex" justify="center" id="content_exp">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <div style="border-top: 2px black solid;margin-top: 50px">
+                <div style="margin-top: 50px;font-size: 30px">Education</div>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>BROWN UNIVERSITY</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Sept.2021 – Present
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="margin-top: 20px">
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14" style="margin-top: 20px">
+                        <ul style="padding-left: 50px">
+                            <li>Title: Computer Science Ph.D. Student</li>
+                            <li>Concentration: Vision, Graphics and Robotics</li>
+                        </ul>
+                    </el-col>
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10" style="text-align: right">
+                        <img class="schoollogo" src="./img/brown_logo.png" height="100px" width="auto"
+                             alt="BROWN Logo"/>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>UNIVERSITY OF CHINESE ACADEMY OF SCIENCES</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Sept. 2017-Jul. 2021
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="margin-top: 20px">
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14" style="margin-top: 20px">
+                        <ul style="padding-left: 50px">
+                            <li>Degree: Bachelor of Computer Science.</li>
+                            <li><em>Outstanding Thesis Awards.</em></li>
+                            <li><em></em>National Inspirational Scholarship(5%).</em></li>
+                        </ul>
+                    </el-col>
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10" style="text-align: right">
+                        <img class="schoollogo" src="./img/cas_logo.jpg" height="100px" width="auto" alt="BROWN Logo"/>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>UNIVERSITY OF CALIFORNIA, SAN DIEGO</strong>
+                        </div>
+                        <div style="text-align: right">
+                            May. 2020-Aug. 2020
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="margin-top: 20px">
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14" style="margin-top: 20px">
+                        <ul style="padding-left: 50px">
+                            <li>Title: Visiting Scholar.</li>
+                        </ul>
+                    </el-col>
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10" style="text-align: right">
+                        <img class="schoollogo" src="./img/ucsd_logo.png" height="100px" width="auto" alt="BROWN Logo"/>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>UNIVERSITY OF SOUTHERN CALIFORNIA</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Jan. 2020-May. 2020
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="margin-top: 20px">
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14" style="margin-top: 20px">
+                        <ul style="padding-left: 50px">
+                            <li>Title: Visiting Student.</li>
+                        </ul>
+                    </el-col>
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10" style="text-align: right">
+                        <img class="schoollogo" src="./img/usc_logo.png" height="100px" width="auto" alt="BROWN Logo"/>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>BEIJING NATIONAL DAY SCHOOL</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Sept. 2011-Jul. 2017
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row style="margin-top: 20px">
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14" style="margin-top: 20px">
+                        <ul style="padding-left: 50px">
+                            <li>Title: Student.</li>
+                        </ul>
+                    </el-col>
+                    <el-col :xs="10" :sm="10" :md="10" :lg="10" :xl="10" style="text-align: right">
+                        <img class="schoollogo" src="./img/bnds_logo.png" height="100px" width="auto" alt="BROWN Logo"/>
+                    </el-col>
+                </el-row>
+
+            </div>
+        </el-col>
+    </el-row>
+
+    <!-- Experience -->
+    <el-row type="flex" justify="center">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
+            <div style="border-top: 2px black solid;margin-top: 50px">
+                <div style="margin-top: 50px;font-size: 30px">Employment</div>
+                <el-row type="flex" justify="center" style="padding-top: 50px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>Research intern: Autodesk Inc.</strong>
+                        </div>
+                        <div style="text-align: right">
+                            May. 2022 – Sept. 2022
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            Group: AI Lab
+                        </div>
+                        <div style="text-align: right">
+                            Toronto, Canada
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <ul style="padding-left: 50px">
+                            <li>Research on Lauguage-guided 3D Shape Generation.</li>
+                        </ul>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 80px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>Research intern: Microsoft Research, Asia</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Mar. 2021 – July. 2021
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            Group: Speech Group, Visual Computing Group
+                        </div>
+                        <div style="text-align: right">
+                            Beijing, China
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <ul style="padding-left: 50px">
+                            <li>Research on High-Resolution Machine Perception Backbone</li>
+                        </ul>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 80px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>Research intern: University of California, San Diego</strong>
+                        </div>
+                        <div style="text-align: right">
+                            May. 2020 – Nov. 2020
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            Advisor: Prof. Hao Su.
+                        </div>
+                        <div style="text-align: right">
+                            San Diego, CA, USA
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <ul style="padding-left: 50px">
+                            <li>Research on Robot Grasping with Two-Finger Grippers.</li>
+                            <li>Research on Humanoid Robot Grippers.</li>
+                        </ul>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center" style="padding-top: 80px">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            <strong>Research intern: Institute of Computing Technology, CAS.</strong>
+                        </div>
+                        <div style="text-align: right">
+                            Jul. 2019 – Nov. 2020
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                        <div>
+                            Advisor: Prof. Lin Gao
+                        </div>
+                        <div style="text-align: right">
+                            Beijing, China
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :xs="14" :sm="14" :md="14" :lg="14" :xl="14">
+                        <ul style="padding-left: 50px">
+                            <li>Research on Fine-grained 3D Shape Retrieval.</li>
+                            <li>Research on Talking Head Generation.</li>
+                        </ul>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-col>
+    </el-row>
+
+    <!-- Footer -->
+    <el-row type="flex" justify="center" style="margin-top: 50px">
+        <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15" style="border-top: 2px black solid">
+            <div>
+                <h1>Buy me a Boba:</h1>
+            </div>
+            <div style="margin-top: 20px">
+                If you like my homepage and think it's useful, welcome to buy me a Boba via Wechat or Paypal down here:
+            </div>
+        </el-col>
+    </el-row>
+    <el-row style="text-align: center">
+        <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+            <img src="./img/donate.jpg" width="200px" height="200px"/>
+            <img src="./img/donate_paypal.jpg" width="200px" height="200px"/>
+        </el-col>
+    </el-row>
+    <el-row style="text-align: center">
+        <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="margin-top: 50px">
+            <div class="b_font" style="background-color: black;color: white;height: 50px;line-height: 50px">
+                &copy; 2023 by Rao FU
+            </div>
+        </el-col>
+    </el-row>
+</div>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </body>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false,
+                activeNames: ['0']
+            }
+        }
+    })
+</script>
 </html>
