@@ -6,7 +6,7 @@
 	h1{
 		margin: 0px;
 		font-family: Times, Times New Roman, serif;
-		color: red;
+		color: black;
 		font-size: 45px;
 	}
 	h2{
@@ -132,13 +132,13 @@
 
 
 	#c_contact_biography a:link {
-		color: #0088d2;
+		color: purple;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
 
 	#c_contact_biography a:visited {
-		color: #0088d2;
+		color: purple;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
@@ -378,7 +378,7 @@
 		color: white;
 	}
 
-	#nav a.active {background-color:purple;color:#ffffff;}
+	#nav a.active {background-color:#25b0f3;color:#ffffff;}
 
 	.btn {
 		border: none;
