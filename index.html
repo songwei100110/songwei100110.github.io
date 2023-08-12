@@ -15,9 +15,9 @@
             min-height: 36px;
         }
 
-        .h1 {
+        /* .h1 {
             text-shadow: -5px 2px 6px rgba(0, 0, 0, 0.5);
-        }
+        } */
 
         .image-container {
             position: relative;
@@ -119,24 +119,24 @@
     <el-row>
         <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="text-align: center;margin-top: 10px">
             <div class="grid-content bg-purple">
-                <h1 style="font-size: 45px" class="h1">Wei Song</h1>
+                <h1 style="font-size: 45px; color: #6e6e6e;" class="h1">Wei Song</h1>
             </div>
         </el-col>
     </el-row>
     <el-row>
         <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="text-align: center">
             <div class="grid-content bg-purple">
-                <h2 class="h1" style="font-size: 16px">CV、CG、ML</h2>
-            </div>
+                
+            </div> 
         </el-col>
     </el-row>
 
     <!-- Nav Bar -->
     <el-row type="flex" justify="center">
         <el-col :xs="24" :sm="24" :md="16" :lg="16" :xl="16" style="text-align: center;margin: 0px auto;">
-            <el-row type="flex" justify="center" style="background-color: black;height: 40px;line-height: 40px">
+            <el-row type="flex" justify="center" style="background-color: gray;height: 40px;line-height: 40px">
                 <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1"
-                        style="text-align: center;font-size: 14px;background-color: #0088d2;">
+                        style="text-align: center;font-size: 14px;background-color: purple;">
                     <div style="display: inline-block"><a class="a1" href="#content_home" style="color: white">Home</a>
                     </div>
                 </el-col>
@@ -144,14 +144,14 @@
                     <div style="display: inline-block"><a class="a1" style="color: white" href="#content_project">Research</a>
                     </div>
                 </el-col>
-                <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
+                <!-- <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
                     <div style="display: inline-block"><a class="a1" style="color: white"
                                                           href="#content_exp">Education</a></div>
                 </el-col>
                 <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
                     <div style="display: inline-block"><a class="a1" style="color: white" href="#">CV</a>
                     </div>
-                </el-col>
+                </el-col> -->
                 <el-col class="col1" :xs="2" :sm="2" :md="2" :lg="2" :xl="1" style="text-align: center;font-size: 14px">
                     <div style="display: inline-block"><a class="a1" style="color: white" href="#">Contact</a>
                     </div>
@@ -163,37 +163,20 @@
     <!-- Biography -->
     <el-row type="flex" justify="center" id="content_home">
         <el-col :xs="12" :sm="12" :md="10" :lg="10" :xl="10" style="margin-top: 50px;line-height: 20px">
-            <strong id="c_font1" style="font-size: 40px">Hello,</strong><br><br>
-            <span class="c_font2" style="font-size: 20px;padding-top: 50px">a bit about me:</span><br><br>
+            <strong id="c_font1" style="font-size: 40px">Hi</strong><br><br>
+            <!-- <span class="c_font2" style="font-size: 20px;padding-top: 50px">A bit about me:</span><br><br> -->
             <p class="c_font3">
-                I'm a PhD student in <a style="color:#0088d2;" href="https://cs.brown.edu/">Computer Science</a> at <a
-                    style="color:#0088d2;" href="https://www.brown.edu/">Brown University</a>.
-                My research interests are in 3D Vision, Graphics, and Robotics.
-                I'm fortunate to work with Prof. <a style="color:#0088d2;" href="https://srinathsridhar.com">Srinath
-                Sridhar</a> and Prof. <a
-                    style="color:#0088d2;" href="https://dritchie.github.io/">Daniel Ritchie</a> at <a
-                    style="color:#0088d2;" href="https://ivl.cs.brown.edu/">Brown
-                IVL</a> & <a style="color:#0088d2;" href="https://visual.cs.brown.edu/">Brown VC Group</a>.
-            </p>
-            <p class="c_font3" style="margin-top: 25px">
-                Prior to this, I earned my Bachelor of Engineering degree from the <a style="color:#0088d2;"
-                                                                                      href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/">University
-                of
-                the Chinese Academy of Sciences</a>.
-                I also had a wonderful time at the <a style="color:#0088d2;" href="https://www.usc.edu/">University of
-                Southern California</a>,
-                the <a style="color:#0088d2;" href="https://ucsd.edu/">University of California San Diego</a>,
-                <a style="color:#0088d2;" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft
-                    Research
-                    Asia</a>,
-                and <a style="color:#0088d2;" href="https://www.autodesk.com/research/overview">Autodesk Research</a>.
+                I am a programmer. <br>
+                My research interests are in 3D Vision, Computer Vision, Computer Graphics, Machine Learning. <br>
+                I'm currently advised by Teacher <a style="color:black;"
+                                                     href="https://scholar.google.com/citations?user=R1BlW14AAAAJ&hl=en&oi=ao">Jun Zhou</a>
             </p>
         </el-col>
         <el-col :xs="8" :sm="8" :md="5" :lg="5" :xl="5" style="text-align: center;margin-top: 50px">
             <div class="image-container">
                 <img src="./img/profile_wei.png" alt="Your Image" width="200px" height="200px"
                      style="border-radius: 200px">
-                <div class="overlay" style="border-radius: 300px;width: 300px;height: 300px;">
+                <div class="overlay" style="border-radius: 200px;width: 200px;height: 200px;">
                     <p style="font-size: 0.6em">
                         Hi, here is my personal image.<br>
                         biu, biu<br>
@@ -207,21 +190,20 @@
     <el-row type="flex" justify="center">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
             <div id="c_info">
-                <span style="font-size: 20px"> and more about me... </span><br>
+                <span> and more about me... </span><br>
                 <div class="thumbnail">
                     <img src="img/email_icon.jpg" id="button0" alt="email_button" width="60px" height="60px">
-                    <div class="overlay" onclick="window.location.href = 'mailto:rao_fu@brown.edu';">
+                    <div class="overlay" onclick="window.location.href = 'songwei100110@gmail.com';">
                         <p>Email to<br>Say Hi</p>
                     </div>
                 </div> <!-- .thumbnail -->
 
-
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/cv_icon.jpg" id="button1" alt="cv_button" width="60px" height="60px">
                     <div class="overlay" onclick="window.location.href='./resource/My_CV.pdf'; ">
                         <p>CV/<br>Resume</p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
                 <div class="thumbnail">
                     <img src="img/gs_icon.png" id="button2" alt="google_button" width="60px" height="60px">
@@ -231,51 +213,51 @@
                     </div>
                 </div> <!-- .thumbnail -->
 
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/linkedin_icon.png" id="button3" alt="lkin_icon" width="60px" height="60px">
                     <div class="overlay"
                          onclick="window.location.href = 'https://www.linkedin.com/in/rao-fu-245269210/';">
                         <p>LinkedIn<br>Profile</p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/ucas_button.png" id="button4" alt="ucas_button" width="60px" height="60px">
                     <div class="overlay"
                          onclick="window.location.href = 'https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences/';">
                         <p>B.E.@<br>UCAS</p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/Brown_icon.jpg" id="button5" alt="brown_button" width="60px" height="60px">
                     <div class="overlay" onclick="window.location.href = 'https://www.brown.edu/';">
                         <p>Ph.D.@<br>Brown
                         </p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/cat_icon.jpg" id="button6" alt="cat_button" width="60px" height="60px">
                     <div class="overlay"
                          onclick="window.location.href = 'https://instagram.com/inocchi_mew?r=nametag';">
                         <p>My Cat<br>Inocchi
                         </p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
-                <div class="thumbnail">
+                <!-- <div class="thumbnail">
                     <img src="img/art_icon.jpg" id="button7" alt="art_button" width="60px" height="60px">
                     <div class="overlay" onclick="window.location.href = './index.html#content_home';">
                         <p>Arts<br>Todo...</p>
                     </div>
-                </div> <!-- .thumbnail -->
+                </div> .thumbnail -->
 
             </div>
         </el-col>
     </el-row>
 
-    <el-row type="flex" justify="center">
+    <!-- <el-row type="flex" justify="center">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
             <div>
                 <span class="c_font2_1"> <strong
@@ -285,10 +267,10 @@
                     href="https://docs.google.com/forms/d/e/1FAIpQLSf10zr1Qshz9WnXkUN4Z47jo4A4eerlJ3YBGQxRBKshCdO1QQ/viewform?usp=sf_link">form</a> or email me!
             </div>
         </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- News -->
-    <el-row type="flex" justify="center" style="margin-top: 50px">
+    <!-- <el-row type="flex" justify="center" style="margin-top: 50px">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
             <el-collapse v-model="activeNames">
                 <h1>News</h1>
@@ -312,7 +294,7 @@
                 </el-collapse-item>
             </el-collapse>
         </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- Research -->
     <el-row type="flex" justify="center" id="content_project">
@@ -426,7 +408,7 @@
     </el-row>
 
     <!-- Education -->
-    <el-row type="flex" justify="center" id="content_exp">
+    <!-- <el-row type="flex" justify="center" id="content_exp">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
             <div style="border-top: 2px black solid;margin-top: 50px">
                 <div style="margin-top: 50px;font-size: 30px">Education</div>
@@ -537,10 +519,10 @@
 
             </div>
         </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- Experience -->
-    <el-row type="flex" justify="center">
+    <!-- <el-row type="flex" justify="center">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15">
             <div style="border-top: 2px black solid;margin-top: 50px">
                 <div style="margin-top: 50px;font-size: 30px">Employment</div>
@@ -657,9 +639,9 @@
             </div>
         </el-col>
     </el-row>
-
+ -->
     <!-- Footer -->
-    <el-row type="flex" justify="center" style="margin-top: 50px">
+    <!-- <el-row type="flex" justify="center" style="margin-top: 50px">
         <el-col :xs="20" :sm="20" :md="15" :lg="15" :xl="15" style="border-top: 2px black solid">
             <div>
                 <h1>Buy me a Boba:</h1>
@@ -674,11 +656,11 @@
             <img src="./img/donate.jpg" width="200px" height="200px"/>
             <img src="./img/donate_paypal.jpg" width="200px" height="200px"/>
         </el-col>
-    </el-row>
+    </el-row> -->
     <el-row style="text-align: center">
         <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" style="margin-top: 50px">
             <div class="b_font" style="background-color: black;color: white;height: 50px;line-height: 50px">
-                &copy; 2023 by Rao FU
+                &copy; 2023 by Wei Song
             </div>
         </el-col>
     </el-row>
