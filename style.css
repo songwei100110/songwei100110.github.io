@@ -191,7 +191,7 @@
 		overflow: hidden;
 	} */
 
-	#c_contact_thumbnail_1 {
+	/* #c_contact_thumbnail_1 {
 		background-image: url('img/donate.jpg');
 		width: 200px; 
 		height: 200px;
@@ -215,7 +215,7 @@
 		border: 2px solid #ffffff;
 		border-radius: 0%;
 		overflow: hidden;
-	}
+	} */
 
 	.c_education_wrapper, .c_intern_wrapper, .c_public_wrapper, .c_project_wrapper, .c_contact_wrapper{
 		border-top: 2px solid black;
@@ -378,7 +378,7 @@
 		color: white;
 	}
 
-	#nav a.active {background-color:#25b0f3;color:#ffffff;}
+	#nav a.active {background-color:purple;color:#ffffff;}
 
 	.btn {
 		border: none;
