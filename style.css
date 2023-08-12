@@ -378,7 +378,7 @@
 		color: white;
 	}
 
-	#nav a.active {background-color:#25b0f3;color:#ffffff;}
+	#nav a.active {background-color:purple;color:#ffffff;}
 
 	.btn {
 		border: none;
@@ -396,12 +396,12 @@
 	  }
 
 	.btn:hover {
-		background-color:#25b0f3;
+		background-color:purple;
 		color:#ffffff;
 	}
 
 	.active {
-		background-color:#25b0f3;
+		background-color:purple;
 		color:#ffffff;
 	}
 
