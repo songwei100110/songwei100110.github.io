@@ -107,13 +107,13 @@
 	}
 	
 	#c_biography a:link {
-		color: #0088d2;
+		color: purple;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
 
 	#c_biography a:visited {
-		color: #0088d2;
+		color: purple;
 		background-color: transparent;
 		/* text-decoration: none; */
 	}
